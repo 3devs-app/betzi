@@ -12,6 +12,7 @@
 		4FDCAEF128318E17000DF9B5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FDCAEF028318E17000DF9B5 /* ViewController.swift */; };
 		4FDCAEF628318E18000DF9B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4FDCAEF528318E18000DF9B5 /* Assets.xcassets */; };
 		4FDCAEF928318E18000DF9B5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FDCAEF728318E18000DF9B5 /* LaunchScreen.storyboard */; };
+		4FDCAF05283192B5000DF9B5 /* BetService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FDCAF04283192B5000DF9B5 /* BetService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		4FDCAEF528318E18000DF9B5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4FDCAEF828318E18000DF9B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4FDCAEFA28318E18000DF9B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4FDCAF04283192B5000DF9B5 /* BetService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +56,135 @@
 		4FDCAEEB28318E17000DF9B5 /* Betzi */ = {
 			isa = PBXGroup;
 			children = (
-				4FDCAEEC28318E17000DF9B5 /* AppDelegate.swift */,
-				4FDCAEEE28318E17000DF9B5 /* SceneDelegate.swift */,
-				4FDCAEF028318E17000DF9B5 /* ViewController.swift */,
-				4FDCAEF528318E18000DF9B5 /* Assets.xcassets */,
-				4FDCAEF728318E18000DF9B5 /* LaunchScreen.storyboard */,
 				4FDCAEFA28318E18000DF9B5 /* Info.plist */,
+				4FDCAF0E28319478000DF9B5 /* Main */,
+				4FDCAF0728319354000DF9B5 /* Scenes */,
+				4FDCAF0828319363000DF9B5 /* UI */,
+				4FDCAF00283191C7000DF9B5 /* Networking */,
+				4FDCAF012831925B000DF9B5 /* Services */,
+				4FDCAF1128319541000DF9B5 /* Managers */,
+				4FDCAF0F283194A5000DF9B5 /* Extensions */,
+				4FDCAF10283194CD000DF9B5 /* Utils */,
+				4FDCAF0628319341000DF9B5 /* Resources */,
 			);
 			path = Betzi;
+			sourceTree = "<group>";
+		};
+		4FDCAF00283191C7000DF9B5 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				4FDCAF032831928B000DF9B5 /* Errors */,
+				4FDCAF0228319272000DF9B5 /* Routes */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		4FDCAF012831925B000DF9B5 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				4FDCAF04283192B5000DF9B5 /* BetService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		4FDCAF0228319272000DF9B5 /* Routes */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Routes;
+			sourceTree = "<group>";
+		};
+		4FDCAF032831928B000DF9B5 /* Errors */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Errors;
+			sourceTree = "<group>";
+		};
+		4FDCAF0628319341000DF9B5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4FDCAEF528318E18000DF9B5 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		4FDCAF0728319354000DF9B5 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				4FDCAEF028318E17000DF9B5 /* ViewController.swift */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		4FDCAF0828319363000DF9B5 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				4FDCAF0A28319376000DF9B5 /* ViewModifiers */,
+				4FDCAF0928319370000DF9B5 /* Components */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		4FDCAF0928319370000DF9B5 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				4FDCAF0C2831938B000DF9B5 /* Textfields */,
+				4FDCAF0B28319387000DF9B5 /* Buttons */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		4FDCAF0A28319376000DF9B5 /* ViewModifiers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModifiers;
+			sourceTree = "<group>";
+		};
+		4FDCAF0B28319387000DF9B5 /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Buttons;
+			sourceTree = "<group>";
+		};
+		4FDCAF0C2831938B000DF9B5 /* Textfields */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Textfields;
+			sourceTree = "<group>";
+		};
+		4FDCAF0E28319478000DF9B5 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				4FDCAEF728318E18000DF9B5 /* LaunchScreen.storyboard */,
+				4FDCAEEC28318E17000DF9B5 /* AppDelegate.swift */,
+				4FDCAEEE28318E17000DF9B5 /* SceneDelegate.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		4FDCAF0F283194A5000DF9B5 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		4FDCAF10283194CD000DF9B5 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		4FDCAF1128319541000DF9B5 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Managers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +260,7 @@
 				4FDCAEF128318E17000DF9B5 /* ViewController.swift in Sources */,
 				4FDCAEED28318E17000DF9B5 /* AppDelegate.swift in Sources */,
 				4FDCAEEF28318E17000DF9B5 /* SceneDelegate.swift in Sources */,
+				4FDCAF05283192B5000DF9B5 /* BetService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
