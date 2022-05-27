@@ -1,733 +1,562 @@
 // !$*UTF8*$!
 {
-	archiveVersion = 1;
-	classes = {
-	};
-	objectVersion = 55;
-	objects = {
-
-/* Begin PBXBuildFile section */
-		4FBF61D0283ABA9900DDBE71 /* OnboardingFlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FBF61CF283ABA9900DDBE71 /* OnboardingFlowCoordinator.swift */; };
-		4FBF61D6283ABD8B00DDBE71 /* Avatar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FBF61D5283ABD8B00DDBE71 /* Avatar.swift */; };
-		4FBF61DB283ABFDB00DDBE71 /* Bet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FBF61DA283ABFDB00DDBE71 /* Bet.swift */; };
-		4FBF61E6283C173500DDBE71 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FBF61E5283C173500DDBE71 /* Coordinator.swift */; };
-		4FBF61E9283C193E00DDBE71 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FBF61E8283C193E00DDBE71 /* Router.swift */; };
-		4FBF61EB283C19C300DDBE71 /* ModalRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FBF61EA283C19C300DDBE71 /* ModalRouter.swift */; };
-		4FBF61ED283C1A8100DDBE71 /* NavigationRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FBF61EC283C1A8100DDBE71 /* NavigationRouter.swift */; };
-		4FBF61F0283C1C6000DDBE71 /* BaseCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FBF61EF283C1C6000DDBE71 /* BaseCoordinator.swift */; };
-		4FBF61F2283C1C6600DDBE71 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FBF61F1283C1C6600DDBE71 /* AppCoordinator.swift */; };
-		4FBF61F5283C1C8E00DDBE71 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FBF61F4283C1C8E00DDBE71 /* HomeView.swift */; };
-		4FBF61F7283C1C9400DDBE71 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FBF61F6283C1C9400DDBE71 /* HomeViewModel.swift */; };
-		4FBF61F9283C1C9D00DDBE71 /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FBF61F8283C1C9D00DDBE71 /* HomeCoordinator.swift */; };
-		4FBF61FB283C1D8000DDBE71 /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FBF61FA283C1D8000DDBE71 /* UserManager.swift */; };
-		4FBF61FD283C1E2C00DDBE71 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FBF61FC283C1E2C00DDBE71 /* BaseViewController.swift */; };
-		4FBF6200283C203600DDBE71 /* Onboarding2View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FBF61FF283C203600DDBE71 /* Onboarding2View.swift */; };
-		4FBF6202283C203E00DDBE71 /* OnboardingViewModel2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FBF6201283C203E00DDBE71 /* OnboardingViewModel2.swift */; };
-		4FBF6205283C25ED00DDBE71 /* OnboardingView3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FBF6204283C25ED00DDBE71 /* OnboardingView3.swift */; };
-		4FBF6207283C25F500DDBE71 /* OnboardingViewModel3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FBF6206283C25F500DDBE71 /* OnboardingViewModel3.swift */; };
-		4FBF6215283D4C3500DDBE71 /* ModalNavigationRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FBF6214283D4C3500DDBE71 /* ModalNavigationRouter.swift */; };
-		4FBF6219283D523C00DDBE71 /* Flow1Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FBF6218283D523C00DDBE71 /* Flow1Coordinator.swift */; };
-		4FBF621C283D525900DDBE71 /* Screen1View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FBF621B283D525900DDBE71 /* Screen1View.swift */; };
-		4FBF621E283D526A00DDBE71 /* Screen1ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FBF621D283D526A00DDBE71 /* Screen1ViewModel.swift */; };
-		4FBF6222283D532500DDBE71 /* Screen2View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FBF6221283D532500DDBE71 /* Screen2View.swift */; };
-		4FBF6224283D532B00DDBE71 /* Flow1Screen2ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FBF6223283D532B00DDBE71 /* Flow1Screen2ViewModel.swift */; };
-		4FBF622F283D5D8800DDBE71 /* Flow2Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FBF622E283D5D8800DDBE71 /* Flow2Coordinator.swift */; };
-		4FBF6232283D601800DDBE71 /* IndependentScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FBF6231283D601800DDBE71 /* IndependentScreenView.swift */; };
-		4FBF6234283D601F00DDBE71 /* IndependentScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FBF6233283D601F00DDBE71 /* IndependentScreenViewModel.swift */; };
-		4FBF6236283D602600DDBE71 /* IndependentScreenCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FBF6235283D602600DDBE71 /* IndependentScreenCoordinator.swift */; };
-		4FDCAEED28318E17000DF9B5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FDCAEEC28318E17000DF9B5 /* AppDelegate.swift */; };
-		4FDCAEEF28318E17000DF9B5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FDCAEEE28318E17000DF9B5 /* SceneDelegate.swift */; };
-		4FDCAEF628318E18000DF9B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4FDCAEF528318E18000DF9B5 /* Assets.xcassets */; };
-		4FDCAEF928318E18000DF9B5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FDCAEF728318E18000DF9B5 /* LaunchScreen.storyboard */; };
-		4FDCAF05283192B5000DF9B5 /* BetService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FDCAF04283192B5000DF9B5 /* BetService.swift */; };
-		4FE4DC2C283928EC00419730 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE4DC2B283928EC00419730 /* OnboardingView.swift */; };
-		4FE4DC2E28393DB800419730 /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE4DC2D28393DB800419730 /* OnboardingViewModel.swift */; };
-		4FE4DC3328393E1D00419730 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE4DC3228393E1D00419730 /* User.swift */; };
-/* End PBXBuildFile section */
-
-/* Begin PBXFileReference section */
-		4FBF61CF283ABA9900DDBE71 /* OnboardingFlowCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingFlowCoordinator.swift; sourceTree = "<group>"; };
-		4FBF61D5283ABD8B00DDBE71 /* Avatar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Avatar.swift; sourceTree = "<group>"; };
-		4FBF61DA283ABFDB00DDBE71 /* Bet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bet.swift; sourceTree = "<group>"; };
-		4FBF61E5283C173500DDBE71 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
-		4FBF61E8283C193E00DDBE71 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
-		4FBF61EA283C19C300DDBE71 /* ModalRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalRouter.swift; sourceTree = "<group>"; };
-		4FBF61EC283C1A8100DDBE71 /* NavigationRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationRouter.swift; sourceTree = "<group>"; };
-		4FBF61EF283C1C6000DDBE71 /* BaseCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCoordinator.swift; sourceTree = "<group>"; };
-		4FBF61F1283C1C6600DDBE71 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
-		4FBF61F4283C1C8E00DDBE71 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
-		4FBF61F6283C1C9400DDBE71 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
-		4FBF61F8283C1C9D00DDBE71 /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
-		4FBF61FA283C1D8000DDBE71 /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
-		4FBF61FC283C1E2C00DDBE71 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
-		4FBF61FF283C203600DDBE71 /* Onboarding2View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onboarding2View.swift; sourceTree = "<group>"; };
-		4FBF6201283C203E00DDBE71 /* OnboardingViewModel2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel2.swift; sourceTree = "<group>"; };
-		4FBF6204283C25ED00DDBE71 /* OnboardingView3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView3.swift; sourceTree = "<group>"; };
-		4FBF6206283C25F500DDBE71 /* OnboardingViewModel3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel3.swift; sourceTree = "<group>"; };
-		4FBF6214283D4C3500DDBE71 /* ModalNavigationRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalNavigationRouter.swift; sourceTree = "<group>"; };
-		4FBF6218283D523C00DDBE71 /* Flow1Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flow1Coordinator.swift; sourceTree = "<group>"; };
-		4FBF621B283D525900DDBE71 /* Screen1View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screen1View.swift; sourceTree = "<group>"; };
-		4FBF621D283D526A00DDBE71 /* Screen1ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screen1ViewModel.swift; sourceTree = "<group>"; };
-		4FBF6221283D532500DDBE71 /* Screen2View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screen2View.swift; sourceTree = "<group>"; };
-		4FBF6223283D532B00DDBE71 /* Flow1Screen2ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flow1Screen2ViewModel.swift; sourceTree = "<group>"; };
-		4FBF622E283D5D8800DDBE71 /* Flow2Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flow2Coordinator.swift; sourceTree = "<group>"; };
-		4FBF6231283D601800DDBE71 /* IndependentScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndependentScreenView.swift; sourceTree = "<group>"; };
-		4FBF6233283D601F00DDBE71 /* IndependentScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndependentScreenViewModel.swift; sourceTree = "<group>"; };
-		4FBF6235283D602600DDBE71 /* IndependentScreenCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndependentScreenCoordinator.swift; sourceTree = "<group>"; };
-		4FDCAEE928318E17000DF9B5 /* Betzi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Betzi.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		4FDCAEEC28318E17000DF9B5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4FDCAEEE28318E17000DF9B5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		4FDCAEF528318E18000DF9B5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		4FDCAEF828318E18000DF9B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		4FDCAEFA28318E18000DF9B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4FDCAF04283192B5000DF9B5 /* BetService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetService.swift; sourceTree = "<group>"; };
-		4FE4DC2B283928EC00419730 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
-		4FE4DC2D28393DB800419730 /* OnboardingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel.swift; sourceTree = "<group>"; };
-		4FE4DC3228393E1D00419730 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-/* End PBXFileReference section */
-
-/* Begin PBXFrameworksBuildPhase section */
-		4FDCAEE628318E17000DF9B5 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXFrameworksBuildPhase section */
-
-/* Begin PBXGroup section */
-		4FBF61CE283ABA8700DDBE71 /* FlowCoordinators */ = {
-			isa = PBXGroup;
-			children = (
-				4FBF6216283D522200DDBE71 /* Coordinator Examples */,
-				4FBF61CF283ABA9900DDBE71 /* OnboardingFlowCoordinator.swift */,
-			);
-			path = FlowCoordinators;
-			sourceTree = "<group>";
-		};
-		4FBF61D4283ABD7000DDBE71 /* User */ = {
-			isa = PBXGroup;
-			children = (
-				4FBF61D5283ABD8B00DDBE71 /* Avatar.swift */,
-				4FE4DC3228393E1D00419730 /* User.swift */,
-			);
-			path = User;
-			sourceTree = "<group>";
-		};
-		4FBF61D7283ABD9A00DDBE71 /* Bets */ = {
-			isa = PBXGroup;
-			children = (
-				4FBF61DA283ABFDB00DDBE71 /* Bet.swift */,
-			);
-			path = Bets;
-			sourceTree = "<group>";
-		};
-		4FBF61E7283C192B00DDBE71 /* Router */ = {
-			isa = PBXGroup;
-			children = (
-				4FBF61E8283C193E00DDBE71 /* Router.swift */,
-				4FBF61EA283C19C300DDBE71 /* ModalRouter.swift */,
-				4FBF61EC283C1A8100DDBE71 /* NavigationRouter.swift */,
-				4FBF6214283D4C3500DDBE71 /* ModalNavigationRouter.swift */,
-			);
-			path = Router;
-			sourceTree = "<group>";
-		};
-		4FBF61EE283C1C5300DDBE71 /* Coordinator */ = {
-			isa = PBXGroup;
-			children = (
-				4FBF61E5283C173500DDBE71 /* Coordinator.swift */,
-				4FBF61EF283C1C6000DDBE71 /* BaseCoordinator.swift */,
-				4FBF61F1283C1C6600DDBE71 /* AppCoordinator.swift */,
-			);
-			path = Coordinator;
-			sourceTree = "<group>";
-		};
-		4FBF61F3283C1C8600DDBE71 /* Home */ = {
-			isa = PBXGroup;
-			children = (
-				4FBF61F4283C1C8E00DDBE71 /* HomeView.swift */,
-				4FBF61F6283C1C9400DDBE71 /* HomeViewModel.swift */,
-				4FBF61F8283C1C9D00DDBE71 /* HomeCoordinator.swift */,
-			);
-			path = Home;
-			sourceTree = "<group>";
-		};
-		4FBF61FE283C202700DDBE71 /* Onboarding2 */ = {
-			isa = PBXGroup;
-			children = (
-				4FBF61FF283C203600DDBE71 /* Onboarding2View.swift */,
-				4FBF6201283C203E00DDBE71 /* OnboardingViewModel2.swift */,
-			);
-			path = Onboarding2;
-			sourceTree = "<group>";
-		};
-		4FBF6203283C25E000DDBE71 /* Onboarding3 */ = {
-			isa = PBXGroup;
-			children = (
-				4FBF6204283C25ED00DDBE71 /* OnboardingView3.swift */,
-				4FBF6206283C25F500DDBE71 /* OnboardingViewModel3.swift */,
-			);
-			path = Onboarding3;
-			sourceTree = "<group>";
-		};
-		4FBF6216283D522200DDBE71 /* Coordinator Examples */ = {
-			isa = PBXGroup;
-			children = (
-				4FBF622D283D5D7A00DDBE71 /* Flow2 */,
-				4FBF6217283D522F00DDBE71 /* Flow1 */,
-			);
-			path = "Coordinator Examples";
-			sourceTree = "<group>";
-		};
-		4FBF6217283D522F00DDBE71 /* Flow1 */ = {
-			isa = PBXGroup;
-			children = (
-				4FBF6218283D523C00DDBE71 /* Flow1Coordinator.swift */,
-			);
-			path = Flow1;
-			sourceTree = "<group>";
-		};
-		4FBF621A283D524E00DDBE71 /* Screen1 */ = {
-			isa = PBXGroup;
-			children = (
-				4FBF621B283D525900DDBE71 /* Screen1View.swift */,
-				4FBF621D283D526A00DDBE71 /* Screen1ViewModel.swift */,
-			);
-			path = Screen1;
-			sourceTree = "<group>";
-		};
-		4FBF621F283D530E00DDBE71 /* Coordinator Examples */ = {
-			isa = PBXGroup;
-			children = (
-				4FBF6230283D600A00DDBE71 /* Independent Screen */,
-				4FBF621A283D524E00DDBE71 /* Screen1 */,
-				4FBF6220283D531900DDBE71 /* Screen2 */,
-			);
-			path = "Coordinator Examples";
-			sourceTree = "<group>";
-		};
-		4FBF6220283D531900DDBE71 /* Screen2 */ = {
-			isa = PBXGroup;
-			children = (
-				4FBF6221283D532500DDBE71 /* Screen2View.swift */,
-				4FBF6223283D532B00DDBE71 /* Flow1Screen2ViewModel.swift */,
-			);
-			path = Screen2;
-			sourceTree = "<group>";
-		};
-		4FBF622D283D5D7A00DDBE71 /* Flow2 */ = {
-			isa = PBXGroup;
-			children = (
-				4FBF622E283D5D8800DDBE71 /* Flow2Coordinator.swift */,
-			);
-			path = Flow2;
-			sourceTree = "<group>";
-		};
-		4FBF6230283D600A00DDBE71 /* Independent Screen */ = {
-			isa = PBXGroup;
-			children = (
-				4FBF6231283D601800DDBE71 /* IndependentScreenView.swift */,
-				4FBF6233283D601F00DDBE71 /* IndependentScreenViewModel.swift */,
-				4FBF6235283D602600DDBE71 /* IndependentScreenCoordinator.swift */,
-			);
-			path = "Independent Screen";
-			sourceTree = "<group>";
-		};
-		4FDCAEE028318E17000DF9B5 = {
-			isa = PBXGroup;
-			children = (
-				4FDCAEEB28318E17000DF9B5 /* Betzi */,
-				4FDCAEEA28318E17000DF9B5 /* Products */,
-			);
-			sourceTree = "<group>";
-		};
-		4FDCAEEA28318E17000DF9B5 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				4FDCAEE928318E17000DF9B5 /* Betzi.app */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		4FDCAEEB28318E17000DF9B5 /* Betzi */ = {
-			isa = PBXGroup;
-			children = (
-				4FDCAEFA28318E18000DF9B5 /* Info.plist */,
-				4FDCAF0E28319478000DF9B5 /* Main */,
-				4FBF61CE283ABA8700DDBE71 /* FlowCoordinators */,
-				4FDCAF0728319354000DF9B5 /* Scenes */,
-				4FDCAF0828319363000DF9B5 /* UI */,
-				4FE4DC3128393E0000419730 /* Models */,
-				4FDCAF00283191C7000DF9B5 /* Networking */,
-				4FDCAF012831925B000DF9B5 /* Services */,
-				4FDCAF1128319541000DF9B5 /* Managers */,
-				4FDCAF0F283194A5000DF9B5 /* Extensions */,
-				4FDCAF10283194CD000DF9B5 /* Utils */,
-				4FDCAF0628319341000DF9B5 /* Resources */,
-			);
-			path = Betzi;
-			sourceTree = "<group>";
-		};
-		4FDCAF00283191C7000DF9B5 /* Networking */ = {
-			isa = PBXGroup;
-			children = (
-				4FDCAF032831928B000DF9B5 /* Errors */,
-				4FDCAF0228319272000DF9B5 /* Routes */,
-			);
-			path = Networking;
-			sourceTree = "<group>";
-		};
-		4FDCAF012831925B000DF9B5 /* Services */ = {
-			isa = PBXGroup;
-			children = (
-				4FDCAF04283192B5000DF9B5 /* BetService.swift */,
-			);
-			path = Services;
-			sourceTree = "<group>";
-		};
-		4FDCAF0228319272000DF9B5 /* Routes */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Routes;
-			sourceTree = "<group>";
-		};
-		4FDCAF032831928B000DF9B5 /* Errors */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Errors;
-			sourceTree = "<group>";
-		};
-		4FDCAF0628319341000DF9B5 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				4FDCAEF528318E18000DF9B5 /* Assets.xcassets */,
-			);
-			path = Resources;
-			sourceTree = "<group>";
-		};
-		4FDCAF0728319354000DF9B5 /* Scenes */ = {
-			isa = PBXGroup;
-			children = (
-				4FBF621F283D530E00DDBE71 /* Coordinator Examples */,
-				4FE4DC2A283928DD00419730 /* Onboarding */,
-				4FBF61F3283C1C8600DDBE71 /* Home */,
-			);
-			path = Scenes;
-			sourceTree = "<group>";
-		};
-		4FDCAF0828319363000DF9B5 /* UI */ = {
-			isa = PBXGroup;
-			children = (
-				4FDCAF0A28319376000DF9B5 /* ViewModifiers */,
-				4FDCAF0928319370000DF9B5 /* Components */,
-			);
-			path = UI;
-			sourceTree = "<group>";
-		};
-		4FDCAF0928319370000DF9B5 /* Components */ = {
-			isa = PBXGroup;
-			children = (
-				4FDCAF0C2831938B000DF9B5 /* Textfields */,
-				4FDCAF0B28319387000DF9B5 /* Buttons */,
-			);
-			path = Components;
-			sourceTree = "<group>";
-		};
-		4FDCAF0A28319376000DF9B5 /* ViewModifiers */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewModifiers;
-			sourceTree = "<group>";
-		};
-		4FDCAF0B28319387000DF9B5 /* Buttons */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Buttons;
-			sourceTree = "<group>";
-		};
-		4FDCAF0C2831938B000DF9B5 /* Textfields */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Textfields;
-			sourceTree = "<group>";
-		};
-		4FDCAF0E28319478000DF9B5 /* Main */ = {
-			isa = PBXGroup;
-			children = (
-				4FBF61EE283C1C5300DDBE71 /* Coordinator */,
-				4FBF61E7283C192B00DDBE71 /* Router */,
-				4FDCAEF728318E18000DF9B5 /* LaunchScreen.storyboard */,
-				4FDCAEEC28318E17000DF9B5 /* AppDelegate.swift */,
-				4FDCAEEE28318E17000DF9B5 /* SceneDelegate.swift */,
-			);
-			path = Main;
-			sourceTree = "<group>";
-		};
-		4FDCAF0F283194A5000DF9B5 /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Extensions;
-			sourceTree = "<group>";
-		};
-		4FDCAF10283194CD000DF9B5 /* Utils */ = {
-			isa = PBXGroup;
-			children = (
-				4FBF61FC283C1E2C00DDBE71 /* BaseViewController.swift */,
-			);
-			path = Utils;
-			sourceTree = "<group>";
-		};
-		4FDCAF1128319541000DF9B5 /* Managers */ = {
-			isa = PBXGroup;
-			children = (
-				4FBF61FA283C1D8000DDBE71 /* UserManager.swift */,
-			);
-			path = Managers;
-			sourceTree = "<group>";
-		};
-		4FE4DC2A283928DD00419730 /* Onboarding */ = {
-			isa = PBXGroup;
-			children = (
-				4FBF6203283C25E000DDBE71 /* Onboarding3 */,
-				4FBF61FE283C202700DDBE71 /* Onboarding2 */,
-				4FE4DC2B283928EC00419730 /* OnboardingView.swift */,
-				4FE4DC2D28393DB800419730 /* OnboardingViewModel.swift */,
-			);
-			path = Onboarding;
-			sourceTree = "<group>";
-		};
-		4FE4DC3128393E0000419730 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				4FBF61D7283ABD9A00DDBE71 /* Bets */,
-				4FBF61D4283ABD7000DDBE71 /* User */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-/* End PBXGroup section */
-
-/* Begin PBXNativeTarget section */
-		4FDCAEE828318E17000DF9B5 /* Betzi */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 4FDCAEFD28318E18000DF9B5 /* Build configuration list for PBXNativeTarget "Betzi" */;
-			buildPhases = (
-				4FDCAEE528318E17000DF9B5 /* Sources */,
-				4FDCAEE628318E17000DF9B5 /* Frameworks */,
-				4FDCAEE728318E17000DF9B5 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = Betzi;
-			packageProductDependencies = (
-			);
-			productName = Betzi;
-			productReference = 4FDCAEE928318E17000DF9B5 /* Betzi.app */;
-			productType = "com.apple.product-type.application";
-		};
-/* End PBXNativeTarget section */
-
-/* Begin PBXProject section */
-		4FDCAEE128318E17000DF9B5 /* Project object */ = {
-			isa = PBXProject;
-			attributes = {
-				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1330;
-				LastUpgradeCheck = 1330;
-				TargetAttributes = {
-					4FDCAEE828318E17000DF9B5 = {
-						CreatedOnToolsVersion = 13.3.1;
-					};
-				};
-			};
-			buildConfigurationList = 4FDCAEE428318E17000DF9B5 /* Build configuration list for PBXProject "Betzi" */;
-			compatibilityVersion = "Xcode 13.0";
-			developmentRegion = en;
-			hasScannedForEncodings = 0;
-			knownRegions = (
-				en,
-				Base,
-			);
-			mainGroup = 4FDCAEE028318E17000DF9B5;
-			packageReferences = (
-			);
-			productRefGroup = 4FDCAEEA28318E17000DF9B5 /* Products */;
-			projectDirPath = "";
-			projectRoot = "";
-			targets = (
-				4FDCAEE828318E17000DF9B5 /* Betzi */,
-			);
-		};
-/* End PBXProject section */
-
-/* Begin PBXResourcesBuildPhase section */
-		4FDCAEE728318E17000DF9B5 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4FDCAEF928318E18000DF9B5 /* LaunchScreen.storyboard in Resources */,
-				4FDCAEF628318E18000DF9B5 /* Assets.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
-
-/* Begin PBXSourcesBuildPhase section */
-		4FDCAEE528318E17000DF9B5 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4FBF61F7283C1C9400DDBE71 /* HomeViewModel.swift in Sources */,
-				4FE4DC2E28393DB800419730 /* OnboardingViewModel.swift in Sources */,
-				4FBF622F283D5D8800DDBE71 /* Flow2Coordinator.swift in Sources */,
-				4FBF61FB283C1D8000DDBE71 /* UserManager.swift in Sources */,
-				4FBF61D0283ABA9900DDBE71 /* OnboardingFlowCoordinator.swift in Sources */,
-				4FBF61F2283C1C6600DDBE71 /* AppCoordinator.swift in Sources */,
-				4FBF6224283D532B00DDBE71 /* Flow1Screen2ViewModel.swift in Sources */,
-				4FBF61FD283C1E2C00DDBE71 /* BaseViewController.swift in Sources */,
-				4FBF6200283C203600DDBE71 /* Onboarding2View.swift in Sources */,
-				4FDCAEED28318E17000DF9B5 /* AppDelegate.swift in Sources */,
-				4FDCAEEF28318E17000DF9B5 /* SceneDelegate.swift in Sources */,
-				4FE4DC2C283928EC00419730 /* OnboardingView.swift in Sources */,
-				4FBF6202283C203E00DDBE71 /* OnboardingViewModel2.swift in Sources */,
-				4FBF6236283D602600DDBE71 /* IndependentScreenCoordinator.swift in Sources */,
-				4FDCAF05283192B5000DF9B5 /* BetService.swift in Sources */,
-				4FBF6222283D532500DDBE71 /* Screen2View.swift in Sources */,
-				4FBF6219283D523C00DDBE71 /* Flow1Coordinator.swift in Sources */,
-				4FBF61F5283C1C8E00DDBE71 /* HomeView.swift in Sources */,
-				4FBF6205283C25ED00DDBE71 /* OnboardingView3.swift in Sources */,
-				4FBF61ED283C1A8100DDBE71 /* NavigationRouter.swift in Sources */,
-				4FBF621E283D526A00DDBE71 /* Screen1ViewModel.swift in Sources */,
-				4FBF6215283D4C3500DDBE71 /* ModalNavigationRouter.swift in Sources */,
-				4FBF61EB283C19C300DDBE71 /* ModalRouter.swift in Sources */,
-				4FBF61E6283C173500DDBE71 /* Coordinator.swift in Sources */,
-				4FBF61D6283ABD8B00DDBE71 /* Avatar.swift in Sources */,
-				4FE4DC3328393E1D00419730 /* User.swift in Sources */,
-				4FBF61DB283ABFDB00DDBE71 /* Bet.swift in Sources */,
-				4FBF61F9283C1C9D00DDBE71 /* HomeCoordinator.swift in Sources */,
-				4FBF6234283D601F00DDBE71 /* IndependentScreenViewModel.swift in Sources */,
-				4FBF61E9283C193E00DDBE71 /* Router.swift in Sources */,
-				4FBF61F0283C1C6000DDBE71 /* BaseCoordinator.swift in Sources */,
-				4FBF6207283C25F500DDBE71 /* OnboardingViewModel3.swift in Sources */,
-				4FBF621C283D525900DDBE71 /* Screen1View.swift in Sources */,
-				4FBF6232283D601800DDBE71 /* IndependentScreenView.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		4FDCAEF728318E18000DF9B5 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4FDCAEF828318E18000DF9B5 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
-
-/* Begin XCBuildConfiguration section */
-		4FDCAEFB28318E18000DF9B5 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
-				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
-				MTL_FAST_MATH = YES;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-			};
-			name = Debug;
-		};
-		4FDCAEFC28318E18000DF9B5 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				MTL_FAST_MATH = YES;
-				SDKROOT = iphoneos;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		4FDCAEFE28318E18000DF9B5 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Betzi/Info.plist;
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = app.3devs.Betzi;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		4FDCAEFF28318E18000DF9B5 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Betzi/Info.plist;
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = app.3devs.Betzi;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-/* End XCBuildConfiguration section */
-
-/* Begin XCConfigurationList section */
-		4FDCAEE428318E17000DF9B5 /* Build configuration list for PBXProject "Betzi" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				4FDCAEFB28318E18000DF9B5 /* Debug */,
-				4FDCAEFC28318E18000DF9B5 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		4FDCAEFD28318E18000DF9B5 /* Build configuration list for PBXNativeTarget "Betzi" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				4FDCAEFE28318E18000DF9B5 /* Debug */,
-				4FDCAEFF28318E18000DF9B5 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-/* End XCConfigurationList section */
-	};
-	rootObject = 4FDCAEE128318E17000DF9B5 /* Project object */;
+   archiveVersion = "1";
+   objectVersion = "46";
+   objects = {
+      "OBJ_1" = {
+         isa = "PBXProject";
+         attributes = {
+            LastSwiftMigration = "9999";
+            LastUpgradeCheck = "9999";
+         };
+         buildConfigurationList = "OBJ_2";
+         compatibilityVersion = "Xcode 3.2";
+         developmentRegion = "en";
+         hasScannedForEncodings = "0";
+         knownRegions = (
+            "en"
+         );
+         mainGroup = "OBJ_5";
+         productRefGroup = "OBJ_13";
+         projectDirPath = ".";
+         targets = (
+            "betzi::betzi",
+            "betzi::SwiftPMPackageDescription",
+            "betzi::betziPackageTests::ProductTarget",
+            "betzi::betziTests"
+         );
+      };
+      "OBJ_10" = {
+         isa = "PBXGroup";
+         children = (
+            "OBJ_11"
+         );
+         name = "Tests";
+         path = "";
+         sourceTree = "SOURCE_ROOT";
+      };
+      "OBJ_11" = {
+         isa = "PBXGroup";
+         children = (
+            "OBJ_12"
+         );
+         name = "betziTests";
+         path = "Tests/betziTests";
+         sourceTree = "SOURCE_ROOT";
+      };
+      "OBJ_12" = {
+         isa = "PBXFileReference";
+         path = "betziTests.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_13" = {
+         isa = "PBXGroup";
+         children = (
+            "betzi::betzi::Product",
+            "betzi::betziTests::Product"
+         );
+         name = "Products";
+         path = "";
+         sourceTree = "BUILT_PRODUCTS_DIR";
+      };
+      "OBJ_16" = {
+         isa = "PBXFileReference";
+         path = "Betzi";
+         sourceTree = "SOURCE_ROOT";
+      };
+      "OBJ_17" = {
+         isa = "PBXFileReference";
+         path = "README.md";
+         sourceTree = "<group>";
+      };
+      "OBJ_19" = {
+         isa = "XCConfigurationList";
+         buildConfigurations = (
+            "OBJ_20",
+            "OBJ_21"
+         );
+         defaultConfigurationIsVisible = "0";
+         defaultConfigurationName = "Release";
+      };
+      "OBJ_2" = {
+         isa = "XCConfigurationList";
+         buildConfigurations = (
+            "OBJ_3",
+            "OBJ_4"
+         );
+         defaultConfigurationIsVisible = "0";
+         defaultConfigurationName = "Release";
+      };
+      "OBJ_20" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            CURRENT_PROJECT_VERSION = "1";
+            DRIVERKIT_DEPLOYMENT_TARGET = "19.0";
+            ENABLE_TESTABILITY = "YES";
+            FRAMEWORK_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(PLATFORM_DIR)/Developer/Library/Frameworks"
+            );
+            HEADER_SEARCH_PATHS = (
+               "$(inherited)"
+            );
+            INFOPLIST_FILE = "betzi.xcodeproj/betzi_Info.plist";
+            IPHONEOS_DEPLOYMENT_TARGET = "9.0";
+            LD_RUNPATH_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx"
+            );
+            MACOSX_DEPLOYMENT_TARGET = "10.10";
+            OTHER_CFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_LDFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_SWIFT_FLAGS = (
+               "$(inherited)"
+            );
+            PRODUCT_BUNDLE_IDENTIFIER = "betzi";
+            PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+            PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+            SKIP_INSTALL = "YES";
+            SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
+               "$(inherited)"
+            );
+            SWIFT_VERSION = "5.0";
+            TARGET_NAME = "betzi";
+            TVOS_DEPLOYMENT_TARGET = "9.0";
+            WATCHOS_DEPLOYMENT_TARGET = "2.0";
+         };
+         name = "Debug";
+      };
+      "OBJ_21" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            CURRENT_PROJECT_VERSION = "1";
+            DRIVERKIT_DEPLOYMENT_TARGET = "19.0";
+            ENABLE_TESTABILITY = "YES";
+            FRAMEWORK_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(PLATFORM_DIR)/Developer/Library/Frameworks"
+            );
+            HEADER_SEARCH_PATHS = (
+               "$(inherited)"
+            );
+            INFOPLIST_FILE = "betzi.xcodeproj/betzi_Info.plist";
+            IPHONEOS_DEPLOYMENT_TARGET = "9.0";
+            LD_RUNPATH_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx"
+            );
+            MACOSX_DEPLOYMENT_TARGET = "10.10";
+            OTHER_CFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_LDFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_SWIFT_FLAGS = (
+               "$(inherited)"
+            );
+            PRODUCT_BUNDLE_IDENTIFIER = "betzi";
+            PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+            PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+            SKIP_INSTALL = "YES";
+            SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
+               "$(inherited)"
+            );
+            SWIFT_VERSION = "5.0";
+            TARGET_NAME = "betzi";
+            TVOS_DEPLOYMENT_TARGET = "9.0";
+            WATCHOS_DEPLOYMENT_TARGET = "2.0";
+         };
+         name = "Release";
+      };
+      "OBJ_22" = {
+         isa = "PBXSourcesBuildPhase";
+         files = (
+            "OBJ_23"
+         );
+      };
+      "OBJ_23" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_9";
+      };
+      "OBJ_24" = {
+         isa = "PBXFrameworksBuildPhase";
+         files = (
+         );
+      };
+      "OBJ_26" = {
+         isa = "XCConfigurationList";
+         buildConfigurations = (
+            "OBJ_27",
+            "OBJ_28"
+         );
+         defaultConfigurationIsVisible = "0";
+         defaultConfigurationName = "Release";
+      };
+      "OBJ_27" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            LD = "/usr/bin/true";
+            OTHER_SWIFT_FLAGS = (
+               "-swift-version",
+               "5",
+               "-I",
+               "$(TOOLCHAIN_DIR)/usr/lib/swift/pm/ManifestAPI",
+               "-sdk",
+               "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk",
+               "-package-description-version",
+               "5.5.0"
+            );
+            SWIFT_VERSION = "5.0";
+         };
+         name = "Debug";
+      };
+      "OBJ_28" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            LD = "/usr/bin/true";
+            OTHER_SWIFT_FLAGS = (
+               "-swift-version",
+               "5",
+               "-I",
+               "$(TOOLCHAIN_DIR)/usr/lib/swift/pm/ManifestAPI",
+               "-sdk",
+               "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk",
+               "-package-description-version",
+               "5.5.0"
+            );
+            SWIFT_VERSION = "5.0";
+         };
+         name = "Release";
+      };
+      "OBJ_29" = {
+         isa = "PBXSourcesBuildPhase";
+         files = (
+            "OBJ_30"
+         );
+      };
+      "OBJ_3" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            CLANG_ENABLE_OBJC_ARC = "YES";
+            COMBINE_HIDPI_IMAGES = "YES";
+            COPY_PHASE_STRIP = "NO";
+            DEBUG_INFORMATION_FORMAT = "dwarf";
+            DYLIB_INSTALL_NAME_BASE = "@rpath";
+            ENABLE_NS_ASSERTIONS = "YES";
+            GCC_OPTIMIZATION_LEVEL = "0";
+            GCC_PREPROCESSOR_DEFINITIONS = (
+               "$(inherited)",
+               "SWIFT_PACKAGE=1",
+               "DEBUG=1"
+            );
+            MACOSX_DEPLOYMENT_TARGET = "10.10";
+            ONLY_ACTIVE_ARCH = "YES";
+            OTHER_SWIFT_FLAGS = (
+               "$(inherited)",
+               "-DXcode"
+            );
+            PRODUCT_NAME = "$(TARGET_NAME)";
+            SDKROOT = "macosx";
+            SUPPORTED_PLATFORMS = (
+               "$(AVAILABLE_PLATFORMS)"
+            );
+            SUPPORTS_MACCATALYST = "YES";
+            SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
+               "$(inherited)",
+               "SWIFT_PACKAGE",
+               "DEBUG"
+            );
+            SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+            USE_HEADERMAP = "NO";
+         };
+         name = "Debug";
+      };
+      "OBJ_30" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_6";
+      };
+      "OBJ_32" = {
+         isa = "XCConfigurationList";
+         buildConfigurations = (
+            "OBJ_33",
+            "OBJ_34"
+         );
+         defaultConfigurationIsVisible = "0";
+         defaultConfigurationName = "Release";
+      };
+      "OBJ_33" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+         };
+         name = "Debug";
+      };
+      "OBJ_34" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+         };
+         name = "Release";
+      };
+      "OBJ_35" = {
+         isa = "PBXTargetDependency";
+         target = "betzi::betziTests";
+      };
+      "OBJ_37" = {
+         isa = "XCConfigurationList";
+         buildConfigurations = (
+            "OBJ_38",
+            "OBJ_39"
+         );
+         defaultConfigurationIsVisible = "0";
+         defaultConfigurationName = "Release";
+      };
+      "OBJ_38" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            CLANG_ENABLE_MODULES = "YES";
+            CURRENT_PROJECT_VERSION = "1";
+            DRIVERKIT_DEPLOYMENT_TARGET = "19.0";
+            EMBEDDED_CONTENT_CONTAINS_SWIFT = "YES";
+            FRAMEWORK_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(PLATFORM_DIR)/Developer/Library/Frameworks"
+            );
+            HEADER_SEARCH_PATHS = (
+               "$(inherited)"
+            );
+            INFOPLIST_FILE = "betzi.xcodeproj/betziTests_Info.plist";
+            IPHONEOS_DEPLOYMENT_TARGET = "14.0";
+            LD_RUNPATH_SEARCH_PATHS = (
+               "$(inherited)",
+               "@loader_path/../Frameworks",
+               "@loader_path/Frameworks"
+            );
+            MACOSX_DEPLOYMENT_TARGET = "11.0";
+            OTHER_CFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_LDFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_SWIFT_FLAGS = (
+               "$(inherited)"
+            );
+            SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
+               "$(inherited)"
+            );
+            SWIFT_VERSION = "5.0";
+            TARGET_NAME = "betziTests";
+            TVOS_DEPLOYMENT_TARGET = "14.0";
+            WATCHOS_DEPLOYMENT_TARGET = "7.0";
+         };
+         name = "Debug";
+      };
+      "OBJ_39" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            CLANG_ENABLE_MODULES = "YES";
+            CURRENT_PROJECT_VERSION = "1";
+            DRIVERKIT_DEPLOYMENT_TARGET = "19.0";
+            EMBEDDED_CONTENT_CONTAINS_SWIFT = "YES";
+            FRAMEWORK_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(PLATFORM_DIR)/Developer/Library/Frameworks"
+            );
+            HEADER_SEARCH_PATHS = (
+               "$(inherited)"
+            );
+            INFOPLIST_FILE = "betzi.xcodeproj/betziTests_Info.plist";
+            IPHONEOS_DEPLOYMENT_TARGET = "14.0";
+            LD_RUNPATH_SEARCH_PATHS = (
+               "$(inherited)",
+               "@loader_path/../Frameworks",
+               "@loader_path/Frameworks"
+            );
+            MACOSX_DEPLOYMENT_TARGET = "11.0";
+            OTHER_CFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_LDFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_SWIFT_FLAGS = (
+               "$(inherited)"
+            );
+            SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
+               "$(inherited)"
+            );
+            SWIFT_VERSION = "5.0";
+            TARGET_NAME = "betziTests";
+            TVOS_DEPLOYMENT_TARGET = "14.0";
+            WATCHOS_DEPLOYMENT_TARGET = "7.0";
+         };
+         name = "Release";
+      };
+      "OBJ_4" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            CLANG_ENABLE_OBJC_ARC = "YES";
+            COMBINE_HIDPI_IMAGES = "YES";
+            COPY_PHASE_STRIP = "YES";
+            DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+            DYLIB_INSTALL_NAME_BASE = "@rpath";
+            GCC_OPTIMIZATION_LEVEL = "s";
+            GCC_PREPROCESSOR_DEFINITIONS = (
+               "$(inherited)",
+               "SWIFT_PACKAGE=1"
+            );
+            MACOSX_DEPLOYMENT_TARGET = "10.10";
+            OTHER_SWIFT_FLAGS = (
+               "$(inherited)",
+               "-DXcode"
+            );
+            PRODUCT_NAME = "$(TARGET_NAME)";
+            SDKROOT = "macosx";
+            SUPPORTED_PLATFORMS = (
+               "$(AVAILABLE_PLATFORMS)"
+            );
+            SUPPORTS_MACCATALYST = "YES";
+            SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
+               "$(inherited)",
+               "SWIFT_PACKAGE"
+            );
+            SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+            USE_HEADERMAP = "NO";
+         };
+         name = "Release";
+      };
+      "OBJ_40" = {
+         isa = "PBXSourcesBuildPhase";
+         files = (
+            "OBJ_41"
+         );
+      };
+      "OBJ_41" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_12";
+      };
+      "OBJ_42" = {
+         isa = "PBXFrameworksBuildPhase";
+         files = (
+            "OBJ_43"
+         );
+      };
+      "OBJ_43" = {
+         isa = "PBXBuildFile";
+         fileRef = "betzi::betzi::Product";
+      };
+      "OBJ_44" = {
+         isa = "PBXTargetDependency";
+         target = "betzi::betzi";
+      };
+      "OBJ_5" = {
+         isa = "PBXGroup";
+         children = (
+            "OBJ_6",
+            "OBJ_7",
+            "OBJ_10",
+            "OBJ_13",
+            "OBJ_16",
+            "OBJ_17"
+         );
+         path = "";
+         sourceTree = "<group>";
+      };
+      "OBJ_6" = {
+         isa = "PBXFileReference";
+         explicitFileType = "sourcecode.swift";
+         path = "Package.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_7" = {
+         isa = "PBXGroup";
+         children = (
+            "OBJ_8"
+         );
+         name = "Sources";
+         path = "";
+         sourceTree = "SOURCE_ROOT";
+      };
+      "OBJ_8" = {
+         isa = "PBXGroup";
+         children = (
+            "OBJ_9"
+         );
+         name = "betzi";
+         path = "Sources/betzi";
+         sourceTree = "SOURCE_ROOT";
+      };
+      "OBJ_9" = {
+         isa = "PBXFileReference";
+         path = "betzi.swift";
+         sourceTree = "<group>";
+      };
+      "betzi::SwiftPMPackageDescription" = {
+         isa = "PBXNativeTarget";
+         buildConfigurationList = "OBJ_26";
+         buildPhases = (
+            "OBJ_29"
+         );
+         dependencies = (
+         );
+         name = "betziPackageDescription";
+         productName = "betziPackageDescription";
+         productType = "com.apple.product-type.framework";
+      };
+      "betzi::betzi" = {
+         isa = "PBXNativeTarget";
+         buildConfigurationList = "OBJ_19";
+         buildPhases = (
+            "OBJ_22",
+            "OBJ_24"
+         );
+         dependencies = (
+         );
+         name = "betzi";
+         productName = "betzi";
+         productReference = "betzi::betzi::Product";
+         productType = "com.apple.product-type.framework";
+      };
+      "betzi::betzi::Product" = {
+         isa = "PBXFileReference";
+         path = "betzi.framework";
+         sourceTree = "BUILT_PRODUCTS_DIR";
+      };
+      "betzi::betziPackageTests::ProductTarget" = {
+         isa = "PBXAggregateTarget";
+         buildConfigurationList = "OBJ_32";
+         buildPhases = (
+         );
+         dependencies = (
+            "OBJ_35"
+         );
+         name = "betziPackageTests";
+         productName = "betziPackageTests";
+      };
+      "betzi::betziTests" = {
+         isa = "PBXNativeTarget";
+         buildConfigurationList = "OBJ_37";
+         buildPhases = (
+            "OBJ_40",
+            "OBJ_42"
+         );
+         dependencies = (
+            "OBJ_44"
+         );
+         name = "betziTests";
+         productName = "betziTests";
+         productReference = "betzi::betziTests::Product";
+         productType = "com.apple.product-type.bundle.unit-test";
+      };
+      "betzi::betziTests::Product" = {
+         isa = "PBXFileReference";
+         path = "betziTests.xctest";
+         sourceTree = "BUILT_PRODUCTS_DIR";
+      };
+   };
+   rootObject = "OBJ_1";
 }
