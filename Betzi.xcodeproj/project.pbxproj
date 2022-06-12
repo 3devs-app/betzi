@@ -46,6 +46,9 @@
 		4FF4FCAE28566F43008569CB /* Spacing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF4FCAD28566F43008569CB /* Spacing.swift */; };
 		4FF4FCB028567063008569CB /* TextStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF4FCAF28567063008569CB /* TextStyle.swift */; };
 		A0219BA928583E3500E37DDA /* BetziTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0219BA828583E3500E37DDA /* BetziTests.swift */; };
+		4FF4FCB3285676D9008569CB /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF4FCB2285676D9008569CB /* R.generated.swift */; };
+		4FF4FCB62856775C008569CB /* Rswift in Frameworks */ = {isa = PBXBuildFile; productRef = 4FF4FCB52856775C008569CB /* Rswift */; };
+		4FF4FCB8285679FA008569CB /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF4FCB7285679FA008569CB /* Colors.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -101,6 +104,8 @@
 		4FF4FCAF28567063008569CB /* TextStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextStyle.swift; sourceTree = "<group>"; };
 		A0219BA628583E3500E37DDA /* BetziTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BetziTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0219BA828583E3500E37DDA /* BetziTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetziTests.swift; sourceTree = "<group>"; };
+		4FF4FCB2285676D9008569CB /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
+		4FF4FCB7285679FA008569CB /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +113,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4FF4FCB62856775C008569CB /* Rswift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -330,6 +336,7 @@
 		4FDCAF0628319341000DF9B5 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				4FF4FCB2285676D9008569CB /* R.generated.swift */,
 				4FDCAEF528318E18000DF9B5 /* Assets.xcassets */,
 			);
 			path = Resources;
@@ -352,6 +359,7 @@
 				4FDCAF0A28319376000DF9B5 /* ViewModifiers */,
 				4FDCAF0928319370000DF9B5 /* Components */,
 				4FF4FCAD28566F43008569CB /* Spacing.swift */,
+				4FF4FCB7285679FA008569CB /* Colors.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -464,6 +472,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4FDCAEFD28318E18000DF9B5 /* Build configuration list for PBXNativeTarget "Betzi" */;
 			buildPhases = (
+				4FF4FCB1285675E5008569CB /* R.swift */,
 				4FDCAEE528318E17000DF9B5 /* Sources */,
 				4FDCAEE628318E17000DF9B5 /* Frameworks */,
 				4FDCAEE728318E17000DF9B5 /* Resources */,
@@ -474,6 +483,7 @@
 			);
 			name = Betzi;
 			packageProductDependencies = (
+				4FF4FCB52856775C008569CB /* Rswift */,
 			);
 			productName = Betzi;
 			productReference = 4FDCAEE928318E17000DF9B5 /* Betzi.app */;
@@ -526,6 +536,7 @@
 			);
 			mainGroup = 4FDCAEE028318E17000DF9B5;
 			packageReferences = (
+				4FF4FCB42856775C008569CB /* XCRemoteSwiftPackageReference "R.swift" */,
 			);
 			productRefGroup = 4FDCAEEA28318E17000DF9B5 /* Products */;
 			projectDirPath = "";
@@ -556,6 +567,29 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4FF4FCB1285675E5008569CB /* R.swift */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = R.swift;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				$PROJECT_DIR/$PROJECT_NAME/Resources/R.generated.swift,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$SRCROOT\"/BuildPhases/R.sh\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4FDCAEE528318E17000DF9B5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -571,6 +605,7 @@
 				4FBF6224283D532B00DDBE71 /* Flow1Screen2ViewModel.swift in Sources */,
 				4FBF61FD283C1E2C00DDBE71 /* BaseViewController.swift in Sources */,
 				4FBF6200283C203600DDBE71 /* Onboarding2View.swift in Sources */,
+				4FF4FCB3285676D9008569CB /* R.generated.swift in Sources */,
 				4FDCAEED28318E17000DF9B5 /* AppDelegate.swift in Sources */,
 				4FDCAEEF28318E17000DF9B5 /* SceneDelegate.swift in Sources */,
 				4FF4FCAE28566F43008569CB /* Spacing.swift in Sources */,
@@ -591,6 +626,7 @@
 				4FE4DC3328393E1D00419730 /* User.swift in Sources */,
 				4FBF61DB283ABFDB00DDBE71 /* Bet.swift in Sources */,
 				4FBF61F9283C1C9D00DDBE71 /* HomeCoordinator.swift in Sources */,
+				4FF4FCB8285679FA008569CB /* Colors.swift in Sources */,
 				4FBF6234283D601F00DDBE71 /* IndependentScreenViewModel.swift in Sources */,
 				4FBF61E9283C193E00DDBE71 /* Router.swift in Sources */,
 				4FBF61F0283C1C6000DDBE71 /* BaseCoordinator.swift in Sources */,
@@ -869,6 +905,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4FF4FCB42856775C008569CB /* XCRemoteSwiftPackageReference "R.swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mac-cain13/R.swift.Library";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.4.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4FF4FCB52856775C008569CB /* Rswift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4FF4FCB42856775C008569CB /* XCRemoteSwiftPackageReference "R.swift" */;
+			productName = Rswift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 4FDCAEE128318E17000DF9B5 /* Project object */;
 }

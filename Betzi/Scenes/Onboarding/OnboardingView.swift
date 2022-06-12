@@ -28,15 +28,17 @@ struct OnboardingView: View {
                 .frame(maxWidth: .infinity)
             })
             .padding()
-            .foregroundColor(.white)
+            .foregroundColor(Colors.white)
             .background(
                 RoundedRectangle(cornerRadius: 10)
-                    .fill(.black)
+                    .fill(Colors.midnightBlue)
             )
-            .padding()
+            .padding(.horizontal, .medium)
         }
-        .frame(maxWidth: .infinity)
+        .foregroundColor(Colors.midnightBlue)
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
         .padding(.medium)
+        .backgroundIgnoringSafeArea(Colors.yellowAmber, edges: .all)
     }
 }
 
