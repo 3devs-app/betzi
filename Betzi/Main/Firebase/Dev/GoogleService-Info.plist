@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>18834840329-b4d1k83msfqcjf0d350jlnnp81reo8jh.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.18834840329-b4d1k83msfqcjf0d350jlnnp81reo8jh</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBiqnG3-vd7q1tpymQ-7vShmYpukkUYN_E</string>
+	<key>GCM_SENDER_ID</key>
+	<string>18834840329</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>app.3devs.Betzi.dev</string>
+	<key>PROJECT_ID</key>
+	<string>betzi-dev</string>
+	<key>STORAGE_BUCKET</key>
+	<string>betzi-dev.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:18834840329:ios:2b1f79f6674ee5a9a551d8</string>
+</dict>
+</plist>

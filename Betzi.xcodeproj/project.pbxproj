@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A7D0E1C283FD84F005A98A2 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A7D0E1B283FD84F005A98A2 /* Environment.swift */; };
 		4FBF61D0283ABA9900DDBE71 /* OnboardingFlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FBF61CF283ABA9900DDBE71 /* OnboardingFlowCoordinator.swift */; };
 		4FBF61D6283ABD8B00DDBE71 /* Avatar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FBF61D5283ABD8B00DDBE71 /* Avatar.swift */; };
 		4FBF61DB283ABFDB00DDBE71 /* Bet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FBF61DA283ABFDB00DDBE71 /* Bet.swift */; };
@@ -45,11 +46,14 @@
 		4FE4DC3328393E1D00419730 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE4DC3228393E1D00419730 /* User.swift */; };
 		4FF4FCAE28566F43008569CB /* Spacing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF4FCAD28566F43008569CB /* Spacing.swift */; };
 		4FF4FCB028567063008569CB /* TextStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF4FCAF28567063008569CB /* TextStyle.swift */; };
-		A0219BA928583E3500E37DDA /* BetziTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0219BA828583E3500E37DDA /* BetziTests.swift */; };
+		A0D8B5072861A1AB006EEB44 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = A0D8B5062861A1AB006EEB44 /* FirebaseFirestore */; };
+		A0D8B5092861A1AB006EEB44 /* FirebaseFirestoreCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = A0D8B5082861A1AB006EEB44 /* FirebaseFirestoreCombine-Community */; };
+		A0D8B50B2861A1AB006EEB44 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = A0D8B50A2861A1AB006EEB44 /* FirebaseFirestoreSwift */; };
+		A0EEF35F285B670D0054DBF4 /* BetziTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0EEF35E285B670D0054DBF4 /* BetziTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		A0219BAA28583E3500E37DDA /* PBXContainerItemProxy */ = {
+		A0EEF357285B66C60054DBF4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 4FDCAEE128318E17000DF9B5 /* Project object */;
 			proxyType = 1;
@@ -59,6 +63,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1A7D0E07283EF1A6005A98A2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		1A7D0E19283EF4D7005A98A2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		1A7D0E1B283FD84F005A98A2 /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
 		4FBF61CF283ABA9900DDBE71 /* OnboardingFlowCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingFlowCoordinator.swift; sourceTree = "<group>"; };
 		4FBF61D5283ABD8B00DDBE71 /* Avatar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Avatar.swift; sourceTree = "<group>"; };
 		4FBF61DA283ABFDB00DDBE71 /* Bet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bet.swift; sourceTree = "<group>"; };
@@ -99,8 +106,13 @@
 		4FE4DC3228393E1D00419730 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		4FF4FCAD28566F43008569CB /* Spacing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spacing.swift; sourceTree = "<group>"; };
 		4FF4FCAF28567063008569CB /* TextStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextStyle.swift; sourceTree = "<group>"; };
-		A0219BA628583E3500E37DDA /* BetziTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BetziTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A0219BA828583E3500E37DDA /* BetziTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetziTests.swift; sourceTree = "<group>"; };
+		A0654B1A2861887100FA3FA3 /* Config-Debug-Production.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Config-Debug-Production.xcconfig"; sourceTree = "<group>"; };
+		A0654B1B2861887E00FA3FA3 /* Config-Release-Development.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Config-Release-Development.xcconfig"; sourceTree = "<group>"; };
+		A0654B1E28618B0500FA3FA3 /* Config-Debug-Development.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Config-Debug-Development.xcconfig"; sourceTree = "<group>"; };
+		A0654B1F28618B4300FA3FA3 /* Config-Release-Production.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Config-Release-Production.xcconfig"; sourceTree = "<group>"; };
+		A0EEF34E285B1F760054DBF4 /* ci_post_clone.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = ci_post_clone.sh; sourceTree = "<group>"; };
+		A0EEF353285B66C60054DBF4 /* BetziTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BetziTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0EEF35E285B670D0054DBF4 /* BetziTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BetziTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,10 +120,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0D8B5072861A1AB006EEB44 /* FirebaseFirestore in Frameworks */,
+				A0D8B5092861A1AB006EEB44 /* FirebaseFirestoreCombine-Community in Frameworks */,
+				A0D8B50B2861A1AB006EEB44 /* FirebaseFirestoreSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A0219BA328583E3500E37DDA /* Frameworks */ = {
+		A0EEF350285B66C60054DBF4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -121,6 +136,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1A7D0E01283E9A94005A98A2 /* Configs */ = {
+			isa = PBXGroup;
+			children = (
+				A0D6AE91285AF9280046B423 /* Environment */,
+			);
+			path = Configs;
+			sourceTree = "<group>";
+		};
+		1A7D0E04283EF180005A98A2 /* Firebase */ = {
+			isa = PBXGroup;
+			children = (
+				1A7D0E06283EF194005A98A2 /* Prod */,
+				1A7D0E05283EF18E005A98A2 /* Dev */,
+			);
+			path = Firebase;
+			sourceTree = "<group>";
+		};
+		1A7D0E05283EF18E005A98A2 /* Dev */ = {
+			isa = PBXGroup;
+			children = (
+				1A7D0E07283EF1A6005A98A2 /* GoogleService-Info.plist */,
+			);
+			path = Dev;
+			sourceTree = "<group>";
+		};
+		1A7D0E06283EF194005A98A2 /* Prod */ = {
+			isa = PBXGroup;
+			children = (
+				1A7D0E19283EF4D7005A98A2 /* GoogleService-Info.plist */,
+			);
+			path = Prod;
+			sourceTree = "<group>";
+		};
 		4FBF61CE283ABA8700DDBE71 /* FlowCoordinators */ = {
 			isa = PBXGroup;
 			children = (
@@ -262,8 +310,9 @@
 		4FDCAEE028318E17000DF9B5 = {
 			isa = PBXGroup;
 			children = (
+				A0EEF34D285B1F4D0054DBF4 /* ci_scripts */,
 				4FDCAEEB28318E17000DF9B5 /* Betzi */,
-				A0219BA728583E3500E37DDA /* BetziTests */,
+				A0EEF354285B66C60054DBF4 /* BetziTests */,
 				4FDCAEEA28318E17000DF9B5 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -272,7 +321,7 @@
 			isa = PBXGroup;
 			children = (
 				4FDCAEE928318E17000DF9B5 /* Betzi.app */,
-				A0219BA628583E3500E37DDA /* BetziTests.xctest */,
+				A0EEF353285B66C60054DBF4 /* BetziTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -280,6 +329,7 @@
 		4FDCAEEB28318E17000DF9B5 /* Betzi */ = {
 			isa = PBXGroup;
 			children = (
+				1A7D0E01283E9A94005A98A2 /* Configs */,
 				4FDCAEFA28318E18000DF9B5 /* Info.plist */,
 				4FDCAF0E28319478000DF9B5 /* Main */,
 				4FBF61CE283ABA8700DDBE71 /* FlowCoordinators */,
@@ -389,6 +439,7 @@
 		4FDCAF0E28319478000DF9B5 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				1A7D0E04283EF180005A98A2 /* Firebase */,
 				4FBF61EE283C1C5300DDBE71 /* Coordinator */,
 				4FBF61E7283C192B00DDBE71 /* Router */,
 				4FDCAEF728318E18000DF9B5 /* LaunchScreen.storyboard */,
@@ -449,10 +500,30 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
-		A0219BA728583E3500E37DDA /* BetziTests */ = {
+		A0D6AE91285AF9280046B423 /* Environment */ = {
 			isa = PBXGroup;
 			children = (
-				A0219BA828583E3500E37DDA /* BetziTests.swift */,
+				A0654B1A2861887100FA3FA3 /* Config-Debug-Production.xcconfig */,
+				A0654B1E28618B0500FA3FA3 /* Config-Debug-Development.xcconfig */,
+				A0654B1B2861887E00FA3FA3 /* Config-Release-Development.xcconfig */,
+				A0654B1F28618B4300FA3FA3 /* Config-Release-Production.xcconfig */,
+				1A7D0E1B283FD84F005A98A2 /* Environment.swift */,
+			);
+			path = Environment;
+			sourceTree = "<group>";
+		};
+		A0EEF34D285B1F4D0054DBF4 /* ci_scripts */ = {
+			isa = PBXGroup;
+			children = (
+				A0EEF34E285B1F760054DBF4 /* ci_post_clone.sh */,
+			);
+			path = ci_scripts;
+			sourceTree = "<group>";
+		};
+		A0EEF354285B66C60054DBF4 /* BetziTests */ = {
+			isa = PBXGroup;
+			children = (
+				A0EEF35E285B670D0054DBF4 /* BetziTests.swift */,
 			);
 			path = BetziTests;
 			sourceTree = "<group>";
@@ -464,6 +535,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4FDCAEFD28318E18000DF9B5 /* Build configuration list for PBXNativeTarget "Betzi" */;
 			buildPhases = (
+				1A7D0E1A283EF887005A98A2 /* FirebaseSetup */,
 				4FDCAEE528318E17000DF9B5 /* Sources */,
 				4FDCAEE628318E17000DF9B5 /* Frameworks */,
 				4FDCAEE728318E17000DF9B5 /* Resources */,
@@ -474,27 +546,30 @@
 			);
 			name = Betzi;
 			packageProductDependencies = (
+				A0D8B5062861A1AB006EEB44 /* FirebaseFirestore */,
+				A0D8B5082861A1AB006EEB44 /* FirebaseFirestoreCombine-Community */,
+				A0D8B50A2861A1AB006EEB44 /* FirebaseFirestoreSwift */,
 			);
 			productName = Betzi;
 			productReference = 4FDCAEE928318E17000DF9B5 /* Betzi.app */;
 			productType = "com.apple.product-type.application";
 		};
-		A0219BA528583E3500E37DDA /* BetziTests */ = {
+		A0EEF352285B66C60054DBF4 /* BetziTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A0219BAC28583E3500E37DDA /* Build configuration list for PBXNativeTarget "BetziTests" */;
+			buildConfigurationList = A0EEF359285B66C60054DBF4 /* Build configuration list for PBXNativeTarget "BetziTests" */;
 			buildPhases = (
-				A0219BA228583E3500E37DDA /* Sources */,
-				A0219BA328583E3500E37DDA /* Frameworks */,
-				A0219BA428583E3500E37DDA /* Resources */,
+				A0EEF34F285B66C60054DBF4 /* Sources */,
+				A0EEF350285B66C60054DBF4 /* Frameworks */,
+				A0EEF351285B66C60054DBF4 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				A0219BAB28583E3500E37DDA /* PBXTargetDependency */,
+				A0EEF358285B66C60054DBF4 /* PBXTargetDependency */,
 			);
 			name = BetziTests;
 			productName = BetziTests;
-			productReference = A0219BA628583E3500E37DDA /* BetziTests.xctest */;
+			productReference = A0EEF353285B66C60054DBF4 /* BetziTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -505,12 +580,12 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1340;
-				LastUpgradeCheck = 1330;
+				LastUpgradeCheck = 1340;
 				TargetAttributes = {
 					4FDCAEE828318E17000DF9B5 = {
 						CreatedOnToolsVersion = 13.3.1;
 					};
-					A0219BA528583E3500E37DDA = {
+					A0EEF352285B66C60054DBF4 = {
 						CreatedOnToolsVersion = 13.4.1;
 						TestTargetID = 4FDCAEE828318E17000DF9B5;
 					};
@@ -526,13 +601,14 @@
 			);
 			mainGroup = 4FDCAEE028318E17000DF9B5;
 			packageReferences = (
+				A0D8B5052861A1AB006EEB44 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 			);
 			productRefGroup = 4FDCAEEA28318E17000DF9B5 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				4FDCAEE828318E17000DF9B5 /* Betzi */,
-				A0219BA528583E3500E37DDA /* BetziTests */,
+				A0EEF352285B66C60054DBF4 /* BetziTests */,
 			);
 		};
 /* End PBXProject section */
@@ -547,7 +623,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A0219BA428583E3500E37DDA /* Resources */ = {
+		A0EEF351285B66C60054DBF4 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -555,6 +631,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1A7D0E1A283EF887005A98A2 /* FirebaseSetup */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = FirebaseSetup;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nPATH_TO_GOOGLE_PLISTS=\"${PROJECT_DIR}/Betzi/Main/Firebase\"\n\ncase \"${CONFIGURATION}\" in\n\n   \"Debug-Development\" | \"Release-Development\" )    \n        cp -r \"$PATH_TO_GOOGLE_PLISTS/Dev/GoogleService-Info.plist\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.app/GoogleService-Info.plist\" ;;\n\n   \"Debug-Production\" | \"Release-Poduction\" )\n        cp -r \"$PATH_TO_GOOGLE_PLISTS/Prod/GoogleService-Info.plist\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.app/GoogleService-Info.plist\" ;;\n\n    *)\n        ;;\nesac\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4FDCAEE528318E17000DF9B5 /* Sources */ = {
@@ -587,6 +684,7 @@
 				4FBF6215283D4C3500DDBE71 /* ModalNavigationRouter.swift in Sources */,
 				4FBF61EB283C19C300DDBE71 /* ModalRouter.swift in Sources */,
 				4FBF61E6283C173500DDBE71 /* Coordinator.swift in Sources */,
+				1A7D0E1C283FD84F005A98A2 /* Environment.swift in Sources */,
 				4FBF61D6283ABD8B00DDBE71 /* Avatar.swift in Sources */,
 				4FE4DC3328393E1D00419730 /* User.swift in Sources */,
 				4FBF61DB283ABFDB00DDBE71 /* Bet.swift in Sources */,
@@ -600,21 +698,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A0219BA228583E3500E37DDA /* Sources */ = {
+		A0EEF34F285B66C60054DBF4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A0219BA928583E3500E37DDA /* BetziTests.swift in Sources */,
+				A0EEF35F285B670D0054DBF4 /* BetziTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		A0219BAB28583E3500E37DDA /* PBXTargetDependency */ = {
+		A0EEF358285B66C60054DBF4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 4FDCAEE828318E17000DF9B5 /* Betzi */;
-			targetProxy = A0219BAA28583E3500E37DDA /* PBXContainerItemProxy */;
+			targetProxy = A0EEF357285B66C60054DBF4 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -630,8 +728,9 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		4FDCAEFB28318E18000DF9B5 /* Debug */ = {
+		1A7D0DFD283E92E9005A98A2 /* Debug-Development */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A0654B1E28618B0500FA3FA3 /* Config-Debug-Development.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -688,10 +787,186 @@
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
-			name = Debug;
+			name = "Debug-Development";
 		};
-		4FDCAEFC28318E18000DF9B5 /* Release */ = {
+		1A7D0DFE283E92E9005A98A2 /* Debug-Development */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A0654B1E28618B0500FA3FA3 /* Config-Debug-Development.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7WM6B85JY6;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Betzi/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = app.3devs.Betzi.dev;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = "Debug-Development";
+		};
+		1A7D0DFF283E92FD005A98A2 /* Release-Development */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A0654B1B2861887E00FA3FA3 /* Config-Release-Development.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = "Release-Development";
+		};
+		1A7D0E00283E92FD005A98A2 /* Release-Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7WM6B85JY6;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Betzi/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = app.3devs.Betzi.dev;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = "Release-Development";
+		};
+		4FDCAEFB28318E18000DF9B5 /* Debug-Production */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A0654B1A2861887100FA3FA3 /* Config-Debug-Production.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = "Debug-Production";
+		};
+		4FDCAEFC28318E18000DF9B5 /* Release-Production */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A0654B1F28618B4300FA3FA3 /* Config-Release-Production.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -742,9 +1017,9 @@
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
 			};
-			name = Release;
+			name = "Release-Production";
 		};
-		4FDCAEFE28318E18000DF9B5 /* Debug */ = {
+		4FDCAEFE28318E18000DF9B5 /* Debug-Production */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -770,73 +1045,298 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
-			name = Debug;
+			name = "Debug-Production";
 		};
-		4FDCAEFF28318E18000DF9B5 /* Release */ = {
+		A0999EE9285902FC005D5D92 /* Release-Production */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 7WM6B85JY6;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Betzi/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = app.3devs.Betzi;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Betzi;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
 			};
-			name = Release;
+			name = "Release-Production";
 		};
-		A0219BAD28583E3500E37DDA /* Debug */ = {
+		A0EEF35A285B66C60054DBF4 /* Debug-Production */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEVELOPMENT_TEAM = 7WM6B85JY6;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = app.3devs.BetziTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Betzi.app/Betzi";
 			};
-			name = Debug;
+			name = "Debug-Production";
 		};
-		A0219BAE28583E3500E37DDA /* Release */ = {
+		A0EEF35B285B66C60054DBF4 /* Debug-Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEVELOPMENT_TEAM = 7WM6B85JY6;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = app.3devs.BetziTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Betzi.app/Betzi";
 			};
-			name = Release;
+			name = "Debug-Development";
+		};
+		A0EEF35C285B66C60054DBF4 /* Release-Production */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 7WM6B85JY6;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = app.3devs.BetziTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Betzi.app/Betzi";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = "Release-Production";
+		};
+		A0EEF35D285B66C60054DBF4 /* Release-Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 7WM6B85JY6;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = app.3devs.BetziTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Betzi.app/Betzi";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = "Release-Development";
 		};
 /* End XCBuildConfiguration section */
 
@@ -844,31 +1344,66 @@
 		4FDCAEE428318E17000DF9B5 /* Build configuration list for PBXProject "Betzi" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4FDCAEFB28318E18000DF9B5 /* Debug */,
-				4FDCAEFC28318E18000DF9B5 /* Release */,
+				4FDCAEFB28318E18000DF9B5 /* Debug-Production */,
+				1A7D0DFD283E92E9005A98A2 /* Debug-Development */,
+				4FDCAEFC28318E18000DF9B5 /* Release-Production */,
+				1A7D0DFF283E92FD005A98A2 /* Release-Development */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = "Release-Production";
 		};
 		4FDCAEFD28318E18000DF9B5 /* Build configuration list for PBXNativeTarget "Betzi" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4FDCAEFE28318E18000DF9B5 /* Debug */,
-				4FDCAEFF28318E18000DF9B5 /* Release */,
+				4FDCAEFE28318E18000DF9B5 /* Debug-Production */,
+				1A7D0DFE283E92E9005A98A2 /* Debug-Development */,
+				1A7D0E00283E92FD005A98A2 /* Release-Development */,
+				A0999EE9285902FC005D5D92 /* Release-Production */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = "Release-Production";
 		};
-		A0219BAC28583E3500E37DDA /* Build configuration list for PBXNativeTarget "BetziTests" */ = {
+		A0EEF359285B66C60054DBF4 /* Build configuration list for PBXNativeTarget "BetziTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A0219BAD28583E3500E37DDA /* Debug */,
-				A0219BAE28583E3500E37DDA /* Release */,
+				A0EEF35A285B66C60054DBF4 /* Debug-Production */,
+				A0EEF35B285B66C60054DBF4 /* Debug-Development */,
+				A0EEF35C285B66C60054DBF4 /* Release-Production */,
+				A0EEF35D285B66C60054DBF4 /* Release-Development */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = "Release-Production";
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A0D8B5052861A1AB006EEB44 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A0D8B5062861A1AB006EEB44 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A0D8B5052861A1AB006EEB44 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		A0D8B5082861A1AB006EEB44 /* FirebaseFirestoreCombine-Community */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A0D8B5052861A1AB006EEB44 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseFirestoreCombine-Community";
+		};
+		A0D8B50A2861A1AB006EEB44 /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A0D8B5052861A1AB006EEB44 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 4FDCAEE128318E17000DF9B5 /* Project object */;
 }

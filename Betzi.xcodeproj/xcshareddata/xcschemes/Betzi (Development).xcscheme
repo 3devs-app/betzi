@@ -23,16 +23,27 @@
       </BuildActionEntries>
    </BuildAction>
    <TestAction
-      buildConfiguration = "Debug (Production)"
+      buildConfiguration = "Debug-Development"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      shouldUseLaunchSchemeArgsEnv = "YES">
+      shouldUseLaunchSchemeArgsEnv = "YES"
+      codeCoverageEnabled = "YES"
+      onlyGenerateCoverageForSpecifiedTargets = "YES">
+      <CodeCoverageTargets>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "4FDCAEE828318E17000DF9B5"
+            BuildableName = "Betzi.app"
+            BlueprintName = "Betzi"
+            ReferencedContainer = "container:Betzi.xcodeproj">
+         </BuildableReference>
+      </CodeCoverageTargets>
       <Testables>
          <TestableReference
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "A0219BA528583E3500E37DDA"
+               BlueprintIdentifier = "A0EEF352285B66C60054DBF4"
                BuildableName = "BetziTests.xctest"
                BlueprintName = "BetziTests"
                ReferencedContainer = "container:Betzi.xcodeproj">
@@ -41,7 +52,7 @@
       </Testables>
    </TestAction>
    <LaunchAction
-      buildConfiguration = "Debug (Production)"
+      buildConfiguration = "Debug-Development"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       launchStyle = "0"
@@ -62,7 +73,7 @@
       </BuildableProductRunnable>
    </LaunchAction>
    <ProfileAction
-      buildConfiguration = "Release (Production)"
+      buildConfiguration = "Debug-Production"
       shouldUseLaunchSchemeArgsEnv = "YES"
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
@@ -79,10 +90,10 @@
       </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
-      buildConfiguration = "Debug (Production)">
+      buildConfiguration = "Debug-Development">
    </AnalyzeAction>
    <ArchiveAction
-      buildConfiguration = "Release (Production)"
+      buildConfiguration = "Debug-Production"
       revealArchiveInOrganizer = "YES">
    </ArchiveAction>
 </Scheme>
