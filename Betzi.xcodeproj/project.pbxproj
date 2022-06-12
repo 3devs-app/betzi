@@ -43,6 +43,8 @@
 		4FE4DC2C283928EC00419730 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE4DC2B283928EC00419730 /* OnboardingView.swift */; };
 		4FE4DC2E28393DB800419730 /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE4DC2D28393DB800419730 /* OnboardingViewModel.swift */; };
 		4FE4DC3328393E1D00419730 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE4DC3228393E1D00419730 /* User.swift */; };
+		4FF4FCAE28566F43008569CB /* Spacing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF4FCAD28566F43008569CB /* Spacing.swift */; };
+		4FF4FCB028567063008569CB /* TextStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF4FCAF28567063008569CB /* TextStyle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -84,6 +86,8 @@
 		4FE4DC2B283928EC00419730 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		4FE4DC2D28393DB800419730 /* OnboardingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel.swift; sourceTree = "<group>"; };
 		4FE4DC3228393E1D00419730 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		4FF4FCAD28566F43008569CB /* Spacing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spacing.swift; sourceTree = "<group>"; };
+		4FF4FCAF28567063008569CB /* TextStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextStyle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -322,8 +326,10 @@
 		4FDCAF0828319363000DF9B5 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				4FF4FCAC28566EFC008569CB /* Fonts */,
 				4FDCAF0A28319376000DF9B5 /* ViewModifiers */,
 				4FDCAF0928319370000DF9B5 /* Components */,
+				4FF4FCAD28566F43008569CB /* Spacing.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -413,6 +419,14 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		4FF4FCAC28566EFC008569CB /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				4FF4FCAF28567063008569CB /* TextStyle.swift */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -487,6 +501,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4FF4FCB028567063008569CB /* TextStyle.swift in Sources */,
 				4FBF61F7283C1C9400DDBE71 /* HomeViewModel.swift in Sources */,
 				4FE4DC2E28393DB800419730 /* OnboardingViewModel.swift in Sources */,
 				4FBF622F283D5D8800DDBE71 /* Flow2Coordinator.swift in Sources */,
@@ -498,6 +513,7 @@
 				4FBF6200283C203600DDBE71 /* Onboarding2View.swift in Sources */,
 				4FDCAEED28318E17000DF9B5 /* AppDelegate.swift in Sources */,
 				4FDCAEEF28318E17000DF9B5 /* SceneDelegate.swift in Sources */,
+				4FF4FCAE28566F43008569CB /* Spacing.swift in Sources */,
 				4FE4DC2C283928EC00419730 /* OnboardingView.swift in Sources */,
 				4FBF6202283C203E00DDBE71 /* OnboardingViewModel2.swift in Sources */,
 				4FBF6236283D602600DDBE71 /* IndependentScreenCoordinator.swift in Sources */,

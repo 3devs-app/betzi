@@ -11,11 +11,32 @@ struct OnboardingView: View {
     @ObservedObject var viewModel: OnboardingViewModel
 
     var body: some View {
-        VStack {
-            Button(action: { viewModel.showEnterName() }) {
-                Text("Push")
-            }
+        VStack(alignment: .leading, spacing: 16) {
+            Text("Start \nbetting \nwith Betzi")
+                .textStyle(.largeTitle)
+            Text("and have fun!")
+                .textStyle(.body)
+            Text("Classic, custom bets and mini bets between friends")
+                .textStyle(.bodyBold)
+
+            Button(action: { print("Sign in with Apple") }, label: {
+                HStack {
+                    Image(systemName: "applelogo")
+                    Text("Sign in with Apple")
+                        .textStyle(.buttonLabelLarge)
+                }
+                .frame(maxWidth: .infinity)
+            })
+            .padding()
+            .foregroundColor(.white)
+            .background(
+                RoundedRectangle(cornerRadius: 10)
+                    .fill(.black)
+            )
+            .padding()
         }
+        .frame(maxWidth: .infinity)
+        .padding(.medium)
     }
 }
 

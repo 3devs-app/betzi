@@ -13,5 +13,5 @@ final class UserManager {
         case signedIn
     }
 
-    var state: State = .signedIn
+    var state: State = .signedOut
 }
