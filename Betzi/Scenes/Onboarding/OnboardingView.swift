@@ -19,8 +19,6 @@ struct OnboardingView: View {
             Text("Classic, custom bets and mini bets between friends")
                 .textStyle(.bodyBold)
           
-          Text(Environment.rootURL)
-              .textStyle(.body)
           Text(Environment.apiKey)
               .textStyle(.body)
 
