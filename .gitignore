@@ -206,3 +206,6 @@ Makefile
 
 # R.swift
 *.generated.swift
+
+# Environment config files
+*/Configs/*
