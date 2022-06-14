@@ -54,7 +54,18 @@
 		4FE4DC3328393E1D00419730 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE4DC3228393E1D00419730 /* User.swift */; };
 		4FF4FCAE28566F43008569CB /* Spacing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF4FCAD28566F43008569CB /* Spacing.swift */; };
 		4FF4FCB028567063008569CB /* TextStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF4FCAF28567063008569CB /* TextStyle.swift */; };
+		A0219BA928583E3500E37DDA /* BetziTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0219BA828583E3500E37DDA /* BetziTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A0219BAA28583E3500E37DDA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4FDCAEE128318E17000DF9B5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4FDCAEE828318E17000DF9B5;
+			remoteInfo = Betzi;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		1A7D0E02283E9AB3005A98A2 /* Development.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Development.xcconfig; sourceTree = "<group>"; };
@@ -102,6 +113,8 @@
 		4FE4DC3228393E1D00419730 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		4FF4FCAD28566F43008569CB /* Spacing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spacing.swift; sourceTree = "<group>"; };
 		4FF4FCAF28567063008569CB /* TextStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextStyle.swift; sourceTree = "<group>"; };
+		A0219BA628583E3500E37DDA /* BetziTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BetziTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0219BA828583E3500E37DDA /* BetziTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetziTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +130,13 @@
 				1A7D0E12283EF345005A98A2 /* FirebaseFirestore in Frameworks */,
 				1A7D0E10283EF345005A98A2 /* FirebaseAuthCombine-Community in Frameworks */,
 				1A7D0E18283EF345005A98A2 /* FirebaseFunctionsCombine-Community in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0219BA328583E3500E37DDA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,6 +320,7 @@
 			isa = PBXGroup;
 			children = (
 				4FDCAEEB28318E17000DF9B5 /* Betzi */,
+				A0219BA728583E3500E37DDA /* BetziTests */,
 				4FDCAEEA28318E17000DF9B5 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -308,6 +329,7 @@
 			isa = PBXGroup;
 			children = (
 				4FDCAEE928318E17000DF9B5 /* Betzi.app */,
+				A0219BA628583E3500E37DDA /* BetziTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -486,6 +508,14 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
+		A0219BA728583E3500E37DDA /* BetziTests */ = {
+			isa = PBXGroup;
+			children = (
+				A0219BA828583E3500E37DDA /* BetziTests.swift */,
+			);
+			path = BetziTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -517,6 +547,24 @@
 			productReference = 4FDCAEE928318E17000DF9B5 /* Betzi.app */;
 			productType = "com.apple.product-type.application";
 		};
+		A0219BA528583E3500E37DDA /* BetziTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A0219BAC28583E3500E37DDA /* Build configuration list for PBXNativeTarget "BetziTests" */;
+			buildPhases = (
+				A0219BA228583E3500E37DDA /* Sources */,
+				A0219BA328583E3500E37DDA /* Frameworks */,
+				A0219BA428583E3500E37DDA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A0219BAB28583E3500E37DDA /* PBXTargetDependency */,
+			);
+			name = BetziTests;
+			productName = BetziTests;
+			productReference = A0219BA628583E3500E37DDA /* BetziTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -524,11 +572,15 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1330;
+				LastSwiftUpdateCheck = 1340;
 				LastUpgradeCheck = 1330;
 				TargetAttributes = {
 					4FDCAEE828318E17000DF9B5 = {
 						CreatedOnToolsVersion = 13.3.1;
+					};
+					A0219BA528583E3500E37DDA = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = 4FDCAEE828318E17000DF9B5;
 					};
 				};
 			};
@@ -549,6 +601,7 @@
 			projectRoot = "";
 			targets = (
 				4FDCAEE828318E17000DF9B5 /* Betzi */,
+				A0219BA528583E3500E37DDA /* BetziTests */,
 			);
 		};
 /* End PBXProject section */
@@ -560,6 +613,13 @@
 			files = (
 				4FDCAEF928318E18000DF9B5 /* LaunchScreen.storyboard in Resources */,
 				4FDCAEF628318E18000DF9B5 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0219BA428583E3500E37DDA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -630,7 +690,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A0219BA228583E3500E37DDA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0219BA928583E3500E37DDA /* BetziTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A0219BAB28583E3500E37DDA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4FDCAEE828318E17000DF9B5 /* Betzi */;
+			targetProxy = A0219BAA28583E3500E37DDA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		4FDCAEF728318E18000DF9B5 /* LaunchScreen.storyboard */ = {
@@ -940,6 +1016,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7WM6B85JY6;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Betzi/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -956,7 +1033,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = "Debug (Production)";
 		};
@@ -968,6 +1045,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7WM6B85JY6;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Betzi/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -984,7 +1062,45 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		A0219BAD28583E3500E37DDA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7WM6B85JY6;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = app.3devs.BetziTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Betzi.app/Betzi";
+			};
+			name = Debug;
+		};
+		A0219BAE28583E3500E37DDA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7WM6B85JY6;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = app.3devs.BetziTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Betzi.app/Betzi";
 			};
 			name = "Release (Production)";
 		};
@@ -1012,6 +1128,15 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = "Release (Production)";
+		};
+		A0219BAC28583E3500E37DDA /* Build configuration list for PBXNativeTarget "BetziTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0219BAD28583E3500E37DDA /* Debug */,
+				A0219BAE28583E3500E37DDA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
