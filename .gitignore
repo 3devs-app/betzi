@@ -188,8 +188,11 @@ Pods/
 ## compatibility with Xcode 3 and earlier (ignoring not required starting Xcode 4)
 
 ### Xcode Patch ###
-*.xcodeproj/*
+# TODO: Fix the Package.resolved exclusion
+#*.xcodeproj/*
 !*.xcodeproj/project.pbxproj
+*.xcodeproj/project.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist
+*.xcodeproj/project.xcworkspace/contents.xcworkspacedata
 !*.xcodeproj/xcshareddata/
 !*.xcworkspace/contents.xcworkspacedata
 /*.gcno
