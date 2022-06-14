@@ -18,6 +18,11 @@ struct OnboardingView: View {
                 .textStyle(.body)
             Text("Classic, custom bets and mini bets between friends")
                 .textStyle(.bodyBold)
+          
+          Text(Environment.rootURL)
+              .textStyle(.body)
+          Text(Environment.apiKey)
+              .textStyle(.body)
 
             Button(action: { print("Sign in with Apple") }, label: {
                 HStack {

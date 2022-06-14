@@ -17,17 +17,9 @@ public enum Environment {
     }
   }
 
-  // MARK: - Plist
-  private static let infoDictionary: [String: Any] = {
-    guard let dict = Bundle.main.infoDictionary else {
-      fatalError("Plist file not found")
-    }
-    return dict
-  }()
-
-  // MARK: - Plist values
+  // MARK: - Environment values
   static let rootURL: URL = {
-    guard let rootURLstring = Environment.infoDictionary[Keys.Plist.rootURL] as? String else {
+    guard let rootURLstring = ProcessInfo.processInfo.environment[Keys.Plist.rootURL] else {
       fatalError("Root URL not set in plist for this environment")
     }
     guard let url = URL(string: rootURLstring) else {
@@ -37,7 +29,7 @@ public enum Environment {
   }()
 
   static let apiKey: String = {
-    guard let apiKey = Environment.infoDictionary[Keys.Plist.apiKey] as? String else {
+    guard let apiKey = ProcessInfo.processInfo.environment[Keys.Plist.apiKey] else {
       fatalError("API Key not set in plist for this environment")
     }
     return apiKey
