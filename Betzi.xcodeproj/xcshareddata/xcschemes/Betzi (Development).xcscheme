@@ -85,7 +85,7 @@
       </EnvironmentVariables>
    </LaunchAction>
    <ProfileAction
-      buildConfiguration = "Release (Development)"
+      buildConfiguration = "Debug (Production)"
       shouldUseLaunchSchemeArgsEnv = "YES"
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
@@ -105,7 +105,7 @@
       buildConfiguration = "Debug (Development)">
    </AnalyzeAction>
    <ArchiveAction
-      buildConfiguration = "Release (Development)"
+      buildConfiguration = "Debug (Production)"
       revealArchiveInOrganizer = "YES">
    </ArchiveAction>
 </Scheme>
