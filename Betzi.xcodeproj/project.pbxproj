@@ -789,6 +789,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7WM6B85JY6;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Betzi/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -872,6 +873,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7WM6B85JY6;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Betzi/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -1037,35 +1039,6 @@
 			};
 			name = "Debug (Production)";
 		};
-		4FDCAEFF28318E18000DF9B5 /* Release (Production) */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1A7D0E03283E9AC8005A98A2 /* Production.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 7WM6B85JY6;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Betzi/Info.plist;
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = app.3devs.Betzi;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
-			};
-			name = Release;
-		};
 		A0219BAD28583E3500E37DDA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1085,7 +1058,7 @@
 			};
 			name = Debug;
 		};
-		A0219BAE28583E3500E37DDA /* Release */ = {
+		A0219BAE28583E3500E37DDA /* Release (Production) */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -1103,6 +1076,36 @@
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Betzi.app/Betzi";
 			};
 			name = "Release (Production)";
+		};
+		A0999EE9285902FC005D5D92 /* Release (Production) */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 7WM6B85JY6;
+				PRODUCT_BUNDLE_IDENTIFIER = app.3devs.Betzi;
+				PRODUCT_NAME = Betzi;
+			};
+			name = "Release (Production)";
+		};
+		A0999EEA285902FC005D5D92 /* Debug (Production) */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = BetziTests;
+			};
+			name = "Debug (Production)";
+		};
+		A0999EEB285902FC005D5D92 /* Debug (Development) */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = BetziTests;
+			};
+			name = "Debug (Development)";
+		};
+		A0999EEC285902FC005D5D92 /* Release (Development) */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = BetziTests;
+			};
+			name = "Release (Development)";
 		};
 /* End XCBuildConfiguration section */
 
@@ -1123,8 +1126,8 @@
 			buildConfigurations = (
 				4FDCAEFE28318E18000DF9B5 /* Debug (Production) */,
 				1A7D0DFE283E92E9005A98A2 /* Debug (Development) */,
-				4FDCAEFF28318E18000DF9B5 /* Release (Production) */,
 				1A7D0E00283E92FD005A98A2 /* Release (Development) */,
+				A0999EE9285902FC005D5D92 /* Release (Production) */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = "Release (Production)";
@@ -1133,7 +1136,10 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A0219BAD28583E3500E37DDA /* Debug */,
-				A0219BAE28583E3500E37DDA /* Release */,
+				A0219BAE28583E3500E37DDA /* Release (Production) */,
+				A0999EEA285902FC005D5D92 /* Debug (Production) */,
+				A0999EEB285902FC005D5D92 /* Debug (Development) */,
+				A0999EEC285902FC005D5D92 /* Release (Development) */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
