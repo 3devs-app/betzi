@@ -71,18 +71,6 @@
             ReferencedContainer = "container:Betzi.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
-      <EnvironmentVariables>
-         <EnvironmentVariable
-            key = "API_KEY"
-            value = "$(API_KEY)"
-            isEnabled = "YES">
-         </EnvironmentVariable>
-         <EnvironmentVariable
-            key = "ROOT_URL"
-            value = "$(ROOT_URL)"
-            isEnabled = "YES">
-         </EnvironmentVariable>
-      </EnvironmentVariables>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Debug (Production)"
