@@ -18,7 +18,10 @@ struct OnboardingView: View {
                 .textStyle(.body)
             Text("Classic, custom bets and mini bets between friends")
                 .textStyle(.bodyBold)
-
+            
+            Text(Environment.get(type: String.self, for: .ApiKey) ?? "EMPTY")
+                .textStyle(.bodyBold)
+            
             Button(action: { print("Sign in with Apple") }, label: {
                 HStack {
                     Image(systemName: "applelogo")
