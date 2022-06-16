@@ -54,12 +54,12 @@
 		4FE4DC3328393E1D00419730 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE4DC3228393E1D00419730 /* User.swift */; };
 		4FF4FCAE28566F43008569CB /* Spacing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF4FCAD28566F43008569CB /* Spacing.swift */; };
 		4FF4FCB028567063008569CB /* TextStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF4FCAF28567063008569CB /* TextStyle.swift */; };
-		A0219BA928583E3500E37DDA /* BetziTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0219BA828583E3500E37DDA /* BetziTests.swift */; };
+		A0EEF35F285B670D0054DBF4 /* BetziTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0EEF35E285B670D0054DBF4 /* BetziTests.swift */; };
 		A0FA62FF285B107800FB9C28 /* DefaultEnvironmentSetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FA62FE285B107800FB9C28 /* DefaultEnvironmentSetup.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		A0219BAA28583E3500E37DDA /* PBXContainerItemProxy */ = {
+		A0EEF357285B66C60054DBF4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 4FDCAEE128318E17000DF9B5 /* Project object */;
 			proxyType = 1;
@@ -112,11 +112,11 @@
 		4FE4DC3228393E1D00419730 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		4FF4FCAD28566F43008569CB /* Spacing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spacing.swift; sourceTree = "<group>"; };
 		4FF4FCAF28567063008569CB /* TextStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextStyle.swift; sourceTree = "<group>"; };
-		A0219BA628583E3500E37DDA /* BetziTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BetziTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A0219BA828583E3500E37DDA /* BetziTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetziTests.swift; sourceTree = "<group>"; };
 		A0D6AE95285AF9A50046B423 /* DefaultEnvironmentSetup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultEnvironmentSetup.swift; sourceTree = "<group>"; };
 		A0D6AE9B285AFFB10046B423 /* DefaultEnvironmentSetup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultEnvironmentSetup.swift; sourceTree = "<group>"; };
 		A0EEF34E285B1F760054DBF4 /* ci_post_clone.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = ci_post_clone.sh; sourceTree = "<group>"; };
+		A0EEF353285B66C60054DBF4 /* BetziTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BetziTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0EEF35E285B670D0054DBF4 /* BetziTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BetziTests.swift; sourceTree = "<group>"; };
 		A0FA62FE285B107800FB9C28 /* DefaultEnvironmentSetup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DefaultEnvironmentSetup.swift; path = Betzi/Configs/Environment/DefaultEnvironmentSetup.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
@@ -136,7 +136,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A0219BA328583E3500E37DDA /* Frameworks */ = {
+		A0EEF350285B66C60054DBF4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -322,7 +322,7 @@
 			children = (
 				A0EEF34D285B1F4D0054DBF4 /* ci_scripts */,
 				4FDCAEEB28318E17000DF9B5 /* Betzi */,
-				A0219BA728583E3500E37DDA /* BetziTests */,
+				A0EEF354285B66C60054DBF4 /* BetziTests */,
 				4FDCAEEA28318E17000DF9B5 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -331,7 +331,7 @@
 			isa = PBXGroup;
 			children = (
 				4FDCAEE928318E17000DF9B5 /* Betzi.app */,
-				A0219BA628583E3500E37DDA /* BetziTests.xctest */,
+				A0EEF353285B66C60054DBF4 /* BetziTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -510,14 +510,6 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
-		A0219BA728583E3500E37DDA /* BetziTests */ = {
-			isa = PBXGroup;
-			children = (
-				A0219BA828583E3500E37DDA /* BetziTests.swift */,
-			);
-			path = BetziTests;
-			sourceTree = "<group>";
-		};
 		A0D6AE8B285AF3380046B423 /* Debug */ = {
 			isa = PBXGroup;
 			children = (
@@ -553,6 +545,14 @@
 			path = ci_scripts;
 			sourceTree = "<group>";
 		};
+		A0EEF354285B66C60054DBF4 /* BetziTests */ = {
+			isa = PBXGroup;
+			children = (
+				A0EEF35E285B670D0054DBF4 /* BetziTests.swift */,
+			);
+			path = BetziTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -585,22 +585,22 @@
 			productReference = 4FDCAEE928318E17000DF9B5 /* Betzi.app */;
 			productType = "com.apple.product-type.application";
 		};
-		A0219BA528583E3500E37DDA /* BetziTests */ = {
+		A0EEF352285B66C60054DBF4 /* BetziTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A0219BAC28583E3500E37DDA /* Build configuration list for PBXNativeTarget "BetziTests" */;
+			buildConfigurationList = A0EEF359285B66C60054DBF4 /* Build configuration list for PBXNativeTarget "BetziTests" */;
 			buildPhases = (
-				A0219BA228583E3500E37DDA /* Sources */,
-				A0219BA328583E3500E37DDA /* Frameworks */,
-				A0219BA428583E3500E37DDA /* Resources */,
+				A0EEF34F285B66C60054DBF4 /* Sources */,
+				A0EEF350285B66C60054DBF4 /* Frameworks */,
+				A0EEF351285B66C60054DBF4 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				A0219BAB28583E3500E37DDA /* PBXTargetDependency */,
+				A0EEF358285B66C60054DBF4 /* PBXTargetDependency */,
 			);
 			name = BetziTests;
 			productName = BetziTests;
-			productReference = A0219BA628583E3500E37DDA /* BetziTests.xctest */;
+			productReference = A0EEF353285B66C60054DBF4 /* BetziTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -616,7 +616,7 @@
 					4FDCAEE828318E17000DF9B5 = {
 						CreatedOnToolsVersion = 13.3.1;
 					};
-					A0219BA528583E3500E37DDA = {
+					A0EEF352285B66C60054DBF4 = {
 						CreatedOnToolsVersion = 13.4.1;
 						TestTargetID = 4FDCAEE828318E17000DF9B5;
 					};
@@ -639,7 +639,7 @@
 			projectRoot = "";
 			targets = (
 				4FDCAEE828318E17000DF9B5 /* Betzi */,
-				A0219BA528583E3500E37DDA /* BetziTests */,
+				A0EEF352285B66C60054DBF4 /* BetziTests */,
 			);
 		};
 /* End PBXProject section */
@@ -654,7 +654,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A0219BA428583E3500E37DDA /* Resources */ = {
+		A0EEF351285B66C60054DBF4 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -748,21 +748,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A0219BA228583E3500E37DDA /* Sources */ = {
+		A0EEF34F285B66C60054DBF4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A0219BA928583E3500E37DDA /* BetziTests.swift in Sources */,
+				A0EEF35F285B670D0054DBF4 /* BetziTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		A0219BAB28583E3500E37DDA /* PBXTargetDependency */ = {
+		A0EEF358285B66C60054DBF4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 4FDCAEE828318E17000DF9B5 /* Betzi */;
-			targetProxy = A0219BAA28583E3500E37DDA /* PBXContainerItemProxy */;
+			targetProxy = A0EEF357285B66C60054DBF4 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1092,74 +1092,290 @@
 			};
 			name = "Debug (Production)";
 		};
-		A0219BAD28583E3500E37DDA /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 7WM6B85JY6;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = app.3devs.BetziTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Betzi.app/Betzi";
-			};
-			name = Debug;
-		};
-		A0219BAE28583E3500E37DDA /* Release (Production) */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 7WM6B85JY6;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = app.3devs.BetziTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Betzi.app/Betzi";
-			};
-			name = "Release (Production)";
-		};
 		A0999EE9285902FC005D5D92 /* Release (Production) */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				DEVELOPMENT_TEAM = 7WM6B85JY6;
 				PRODUCT_BUNDLE_IDENTIFIER = app.3devs.Betzi;
 				PRODUCT_NAME = Betzi;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
 			};
 			name = "Release (Production)";
 		};
-		A0999EEA285902FC005D5D92 /* Debug (Production) */ = {
+		A0EEF35A285B66C60054DBF4 /* Debug (Production) */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				PRODUCT_NAME = BetziTests;
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 7WM6B85JY6;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = app.3devs.BetziTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Betzi.app/Betzi";
 			};
 			name = "Debug (Production)";
 		};
-		A0999EEB285902FC005D5D92 /* Debug (Development) */ = {
+		A0EEF35B285B66C60054DBF4 /* Debug (Development) */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				PRODUCT_NAME = BetziTests;
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 7WM6B85JY6;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = app.3devs.BetziTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Betzi.app/Betzi";
 			};
 			name = "Debug (Development)";
 		};
-		A0999EEC285902FC005D5D92 /* Release (Development) */ = {
+		A0EEF35C285B66C60054DBF4 /* Release (Production) */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				PRODUCT_NAME = BetziTests;
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 7WM6B85JY6;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = app.3devs.BetziTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Betzi.app/Betzi";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = "Release (Production)";
+		};
+		A0EEF35D285B66C60054DBF4 /* Release (Development) */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 7WM6B85JY6;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = app.3devs.BetziTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Betzi.app/Betzi";
+				VALIDATE_PRODUCT = YES;
 			};
 			name = "Release (Development)";
 		};
@@ -1188,17 +1404,16 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = "Release (Production)";
 		};
-		A0219BAC28583E3500E37DDA /* Build configuration list for PBXNativeTarget "BetziTests" */ = {
+		A0EEF359285B66C60054DBF4 /* Build configuration list for PBXNativeTarget "BetziTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A0219BAD28583E3500E37DDA /* Debug */,
-				A0219BAE28583E3500E37DDA /* Release (Production) */,
-				A0999EEA285902FC005D5D92 /* Debug (Production) */,
-				A0999EEB285902FC005D5D92 /* Debug (Development) */,
-				A0999EEC285902FC005D5D92 /* Release (Development) */,
+				A0EEF35A285B66C60054DBF4 /* Debug (Production) */,
+				A0EEF35B285B66C60054DBF4 /* Debug (Development) */,
+				A0EEF35C285B66C60054DBF4 /* Release (Production) */,
+				A0EEF35D285B66C60054DBF4 /* Release (Development) */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = "Release (Production)";
 		};
 /* End XCConfigurationList section */
 

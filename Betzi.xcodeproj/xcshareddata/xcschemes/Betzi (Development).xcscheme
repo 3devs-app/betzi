@@ -43,7 +43,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "A0219BA528583E3500E37DDA"
+               BlueprintIdentifier = "A0EEF352285B66C60054DBF4"
                BuildableName = "BetziTests.xctest"
                BlueprintName = "BetziTests"
                ReferencedContainer = "container:Betzi.xcodeproj">

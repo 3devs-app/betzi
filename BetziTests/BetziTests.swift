@@ -2,7 +2,7 @@
 //  BetziTests.swift
 //  BetziTests
 //
-//  Created by Luis Chavez pozo on 13/06/22.
+//  Created by Luis Chavez pozo on 16/06/22.
 //
 
 import XCTest
