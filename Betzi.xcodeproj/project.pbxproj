@@ -46,7 +46,6 @@
 		4FE4DC3328393E1D00419730 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE4DC3228393E1D00419730 /* User.swift */; };
 		4FF4FCAE28566F43008569CB /* Spacing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF4FCAD28566F43008569CB /* Spacing.swift */; };
 		4FF4FCB028567063008569CB /* TextStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF4FCAF28567063008569CB /* TextStyle.swift */; };
-		A0654B182860D99600FA3FA3 /* FirebaseFirestoreCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = A0654B172860D99600FA3FA3 /* FirebaseFirestoreCombine-Community */; };
 		A0EEF35F285B670D0054DBF4 /* BetziTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0EEF35E285B670D0054DBF4 /* BetziTests.swift */; };
 		A0FA62FF285B107800FB9C28 /* DefaultEnvironmentSetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FA62FE285B107800FB9C28 /* DefaultEnvironmentSetup.swift */; };
 /* End PBXBuildFile section */
@@ -118,7 +117,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A0654B182860D99600FA3FA3 /* FirebaseFirestoreCombine-Community in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -558,7 +556,6 @@
 			);
 			name = Betzi;
 			packageProductDependencies = (
-				A0654B172860D99600FA3FA3 /* FirebaseFirestoreCombine-Community */,
 			);
 			productName = Betzi;
 			productReference = 4FDCAEE928318E17000DF9B5 /* Betzi.app */;
@@ -611,7 +608,6 @@
 			);
 			mainGroup = 4FDCAEE028318E17000DF9B5;
 			packageReferences = (
-				A0654B162860D99600FA3FA3 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 			);
 			productRefGroup = 4FDCAEEA28318E17000DF9B5 /* Products */;
 			projectDirPath = "";
@@ -1395,25 +1391,6 @@
 			defaultConfigurationName = "Release (Production)";
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		A0654B162860D99600FA3FA3 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
-			requirement = {
-				branch = master;
-				kind = branch;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		A0654B172860D99600FA3FA3 /* FirebaseFirestoreCombine-Community */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = A0654B162860D99600FA3FA3 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = "FirebaseFirestoreCombine-Community";
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 4FDCAEE128318E17000DF9B5 /* Project object */;
 }

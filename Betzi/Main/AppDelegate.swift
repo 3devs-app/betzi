@@ -6,14 +6,13 @@
 //
 
 import UIKit
-import FirebaseCore
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        FirebaseApp.configure()
+       
         print("API KEY \(String(describing: Environment.get(type: String.self, for: .ApiKey)))")
         print("API KEY \(String(describing: Environment.get(type: URL.self, for: .baseURL)))")
         return true
