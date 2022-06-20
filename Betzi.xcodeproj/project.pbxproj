@@ -673,7 +673,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nPATH_TO_ENVIRONMENT=\"${PROJECT_DIR}/Betzi/Configs/Environment\"\n\ncase \"${CONFIGURATION}\" in\n    \n   \"Debug (Development)\" )\n        cp -r \"$PATH_TO_ENVIRONMENT/Debug/DefaultEnvironmentSetup.swift\" \"$PATH_TO_ENVIRONMENT/DefaultEnvironmentSetup.swift\" ;; \n\n      \"Release (Development)\" | \"Debug (Production)\" | \"Release (Poduction)\" )\n        cp -r \"$PATH_TO_ENVIRONMENT/CI/DefaultEnvironmentSetup.swift\" \"$PATH_TO_ENVIRONMENT/DefaultEnvironmentSetup.swift\" ;;\n\n    *)\n        ;;\nesac\n";
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
