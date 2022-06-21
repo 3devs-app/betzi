@@ -23,26 +23,26 @@ struct OnboardingView: View {
         case .page2:
             return 20
         case .page3:
-            return 100
+            return 200
         }
     }
 
     var body: some View {
         ZStack {
+            tabs
+
             header
 
-            VStack(spacing: .xxLarge) {
-                tabs
-
+            VStack(spacing: .xLarge) {
                 signInWithAppleButton
 
                 tabDots
             }
+            .frame(maxHeight: .infinity, alignment: .bottom)
         }
         .padding(.large)
-        .frame(maxHeight: .infinity)
-        .backgroundIgnoringSafeArea(currentContent.backgroundColor, edges: .all)
         .animation(.easeInOut, value: pageIndex)
+        .backgroundIgnoringSafeArea(currentContent.backgroundColor, edges: .all)
         .navigationBarHidden(true)
     }
 
@@ -68,7 +68,6 @@ struct OnboardingView: View {
             }
         }
         .tabViewStyle(.page(indexDisplayMode: .never))
-        .frame(maxHeight: textsSize == .zero ? nil : textsSize.height)
     }
 
     private var tabDots: some View {
