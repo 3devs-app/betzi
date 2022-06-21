@@ -8,18 +8,17 @@
 import Foundation
 
 enum EnvironmentKey: String, CaseIterable {
-    case baseURL
-    case ApiKey
-}
-
-protocol EnvironmentSetup {
-    static var envionments: [String: Any] { get }
+    case baseURL = "BASE_URL"
+    case ApiKey = "API_KEY"
 }
 
 struct Environment {
-    static func get<T>(type: T.Type, for Key: EnvironmentKey) -> T? {
-        let envionments = DefaultEnvironmentSetup.envionments
-        let environment = envionments[Key.rawValue] as? T
+    static func get<T>(type: T.Type, for key: EnvironmentKey) -> T? {
+        guard let path = Bundle.main.path(forResource: "Info", ofType: "plist"),
+              let dict = NSDictionary(contentsOfFile: path),
+              let environments = dict["Environment"] as? [String: Any]
+        else { return nil }
+        let environment = environments[key.rawValue] as? T
         return environment
     }
 }
