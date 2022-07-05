@@ -1,5 +1,5 @@
 #!/bin/sh
-brew mint
+brew install mint
 mint bootstrap
 
 cat > ../Betzi/Configs/Environment/Confg-${CONFIGURATION}.xcconfig << 'EOF'
