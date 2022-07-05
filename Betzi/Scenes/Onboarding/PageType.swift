@@ -1,15 +1,15 @@
 //
-//  Content.swift
+//  PageType.swift
 //  Betzi
 //
 //  Created by Daniel Fernandez Yopla on 04.07.2022.
 //
 
-import Foundation
+import SwiftUI
 import Rswift
 
 extension OnboardingView {
-    enum Content: Int, Identifiable, CaseIterable {
+    enum PageType: Int, Identifiable, CaseIterable {
         case page1 = 0
         case page2
         case page3
@@ -48,7 +48,18 @@ extension OnboardingView {
                 return "You can also create mini bets between matches"
             }
         }
-        
+
+        var soccerBallYOffset: CGFloat {
+            switch self {
+            case .page1:
+                return -500
+            case .page2:
+                return 20
+            case .page3:
+                return 200
+            }
+        }
+
         var backgroundColor: ColorResource {
             switch self {
             case .page1:

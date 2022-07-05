@@ -12,19 +12,8 @@ struct OnboardingView: View {
     @State private var pageIndex = 0
     @State private var textsSize: CGSize = .zero
 
-    var currentContent: Content {
-        Content(rawValue: pageIndex) ?? .page1
-    }
-
-    var soccerBallYOffset: CGFloat {
-        switch currentContent {
-        case .page1:
-            return -500
-        case .page2:
-            return 20
-        case .page3:
-            return 200
-        }
+    var currentContent: PageType {
+        PageType(rawValue: pageIndex) ?? .page1
     }
 
     var body: some View {
@@ -54,7 +43,7 @@ struct OnboardingView: View {
                 .frame(maxWidth: .infinity, alignment: .leading)
 
             Images.onboarding.soccerBall.image
-                .offset(y: soccerBallYOffset)
+                .offset(y: currentContent.soccerBallYOffset)
                 .animation(.spring(response: 1, dampingFraction: 0.6, blendDuration: 0.5), value: pageIndex)
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
@@ -62,7 +51,7 @@ struct OnboardingView: View {
 
     private var tabs: some View {
         TabView(selection: $pageIndex) {
-            ForEach(Content.allCases) { content in
+            ForEach(PageType.allCases) { content in
                 makePage(with: content)
                     .tag(content.id)
             }
@@ -72,7 +61,7 @@ struct OnboardingView: View {
 
     private var tabDots: some View {
         HStack(spacing: .xSmall) {
-            ForEach(Content.allCases) { content in
+            ForEach(PageType.allCases) { content in
                 Circle()
                     .fill(Colors.primary.white)
                     .opacity(content.id == pageIndex ? 1 : 0.5)
@@ -99,7 +88,7 @@ struct OnboardingView: View {
         .padding(.horizontal, .medium)
     }
 
-    @ViewBuilder private func makePage(with content: Content) -> some View {
+    @ViewBuilder private func makePage(with content: PageType) -> some View {
         VStack(alignment: .leading, spacing: .medium) {
             Text(content.title)
                 .textStyle(.largeTitle)
