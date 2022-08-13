@@ -1,13 +1,14 @@
-export PATH=/opt/homebrew/bin:${PATH}
+# Type a script or drag a script file from your workspace to insert its path.
+PATH_TO_GOOGLE_PLISTS="${PROJECT_DIR}/Betzi/Main/Firebase"
 
-if [ "${ENABLE_PREVIEWS}" = "YES" ]; then
-  echo "Previews enabled, quitting to prevent 'preview paused'."
-  exit 0;
-fi
+case "${CONFIGURATION}" in
 
-if mint list | grep -q 'R.swift'; then
-  mint run R.swift rswift generate "$PROJECT_DIR/$PROJECT_NAME/Resources/R.generated.swift"
-else
-  echo "error: R.swift not installed; run 'mint bootstrap' to install"
-  return -1
-fi
+   "Debug-Development" | "Release-Development" )    
+        cp -r "$PATH_TO_GOOGLE_PLISTS/Dev/GoogleService-Info.plist" "${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.app/GoogleService-Info.plist" ;;
+
+   "Debug-Production" | "Release-Poduction" )
+        cp -r "$PATH_TO_GOOGLE_PLISTS/Prod/GoogleService-Info.plist" "${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.app/GoogleService-Info.plist" ;;
+
+    *)
+        ;;
+esac
