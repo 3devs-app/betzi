@@ -8,5 +8,11 @@
 import Foundation
 
 final class CreateBetViewModel: ObservableObject {
-    
+    enum BetType {
+        case classic
+        case custom
+    }
+
+    @Published var selectedBetType: BetType = .classic
+
 }

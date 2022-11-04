@@ -59,6 +59,8 @@
 		A0D8B5092861A1AB006EEB44 /* FirebaseFirestoreCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = A0D8B5082861A1AB006EEB44 /* FirebaseFirestoreCombine-Community */; };
 		A0D8B50B2861A1AB006EEB44 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = A0D8B50A2861A1AB006EEB44 /* FirebaseFirestoreSwift */; };
 		A0EEF35F285B670D0054DBF4 /* BetziTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0EEF35E285B670D0054DBF4 /* BetziTests.swift */; };
+		A1116B7329154CA600AB8971 /* SelectableCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1116B7229154CA600AB8971 /* SelectableCircleView.swift */; };
+		A1116B7729154ED600AB8971 /* ButtonMainStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1116B7629154ED600AB8971 /* ButtonMainStyle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -130,6 +132,8 @@
 		A0EEF34E285B1F760054DBF4 /* ci_post_clone.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = ci_post_clone.sh; sourceTree = "<group>"; };
 		A0EEF353285B66C60054DBF4 /* BetziTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BetziTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0EEF35E285B670D0054DBF4 /* BetziTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BetziTests.swift; sourceTree = "<group>"; };
+		A1116B7229154CA600AB8971 /* SelectableCircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectableCircleView.swift; sourceTree = "<group>"; };
+		A1116B7629154ED600AB8971 /* ButtonMainStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonMainStyle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -218,6 +222,7 @@
 				4FBDCF0D287341CA00E4AFA1 /* Buttons */,
 				4FBDCF0C287341C400E4AFA1 /* TextFields */,
 				4F26F45628A84795005558E8 /* ProgressBar.swift */,
+				A1116B7229154CA600AB8971 /* SelectableCircleView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -469,6 +474,7 @@
 		4FDCAF0828319363000DF9B5 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				A1116B7429154EC300AB8971 /* Styles */,
 				4FBDCF0B287341BB00E4AFA1 /* Components */,
 				4FF4FCAC28566EFC008569CB /* Fonts */,
 				4FDCAF0A28319376000DF9B5 /* ViewModifiers */,
@@ -568,6 +574,22 @@
 				A0EEF35E285B670D0054DBF4 /* BetziTests.swift */,
 			);
 			path = BetziTests;
+			sourceTree = "<group>";
+		};
+		A1116B7429154EC300AB8971 /* Styles */ = {
+			isa = PBXGroup;
+			children = (
+				A1116B7529154ECA00AB8971 /* Button */,
+			);
+			path = Styles;
+			sourceTree = "<group>";
+		};
+		A1116B7529154ECA00AB8971 /* Button */ = {
+			isa = PBXGroup;
+			children = (
+				A1116B7629154ED600AB8971 /* ButtonMainStyle.swift */,
+			);
+			path = Button;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -745,6 +767,7 @@
 				4FDCAF05283192B5000DF9B5 /* BetService.swift in Sources */,
 				4FBF6222283D532500DDBE71 /* Screen2View.swift in Sources */,
 				4FBF6219283D523C00DDBE71 /* Flow1Coordinator.swift in Sources */,
+				A1116B7329154CA600AB8971 /* SelectableCircleView.swift in Sources */,
 				4FBF61F5283C1C8E00DDBE71 /* HomeView.swift in Sources */,
 				4FBF6205283C25ED00DDBE71 /* OnboardingView3.swift in Sources */,
 				4FBF61ED283C1A8100DDBE71 /* NavigationRouter.swift in Sources */,
@@ -752,6 +775,7 @@
 				4FBDCF0828733EC600E4AFA1 /* Colors.swift in Sources */,
 				4FBF6215283D4C3500DDBE71 /* ModalNavigationRouter.swift in Sources */,
 				4FBF61EB283C19C300DDBE71 /* ModalRouter.swift in Sources */,
+				A1116B7729154ED600AB8971 /* ButtonMainStyle.swift in Sources */,
 				4FBDCEFF28733D6800E4AFA1 /* R.generated.swift in Sources */,
 				4FBF61E6283C173500DDBE71 /* Coordinator.swift in Sources */,
 				1A7D0E1C283FD84F005A98A2 /* Environment.swift in Sources */,

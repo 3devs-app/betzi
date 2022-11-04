@@ -47,17 +47,10 @@ struct CreateBetView: View {
                     .frame(maxWidth: .infinity, alignment: .leading)
                     .textStyle(.bodySmallBold)
 
-                Spacer()
-
-                Button(action: { print("Next") }, label: {
-                    Text("Next")
-                        .textStyle(.h3)
-                        .padding()
-                        .frame(maxWidth: .infinity)
-                        .background(Colors.primary.violet)
-                        .foregroundColor(.white)
-                        .cornerRadius(16)
-                })
+                Button("Next") {
+                    print("button tap")
+                }
+                .buttonStyle(ButtonMainStyle())
             }
         }
     }
@@ -79,15 +72,10 @@ struct CreateBetView: View {
                     .textStyle(.bodySmall)
             }
 
-            ZStack {
-                Circle()
-                    .strokeBorder(Colors.primary.violet.color, lineWidth: 1)
-                    .frame(width: 20, height: 20)
-
-                Circle()
-                    .fill(Colors.primary.violet)
-                    .frame(width: 10, height: 10)
-            }
+            SelectableCircleView(
+                color: Colors.primary.violet.color,
+                isSelected: viewModel.selectedBetType == .classic
+            )
         }
         .padding(.vertical, .large)
         .frame(maxWidth: .infinity)
@@ -95,6 +83,9 @@ struct CreateBetView: View {
             Colors.bets.classic.color
                 .cornerRadius(16)
         )
+        .onTapGesture {
+            viewModel.selectedBetType = .classic
+        }
     }
 
     private var customBet: some View {
@@ -114,15 +105,10 @@ struct CreateBetView: View {
                     .textStyle(.bodySmall)
             }
 
-            ZStack {
-                Circle()
-                    .strokeBorder(Colors.primary.midnightBlue.color, lineWidth: 1)
-                    .frame(width: 20, height: 20)
-
-                Circle()
-                    .fill(Colors.primary.midnightBlue)
-                    .frame(width: 10, height: 10)
-            }
+            SelectableCircleView(
+                color: Colors.primary.midnightBlue.color,
+                isSelected: viewModel.selectedBetType == .custom
+            )
         }
         .padding(.vertical, .large)
         .frame(maxWidth: .infinity)
@@ -130,17 +116,10 @@ struct CreateBetView: View {
             Colors.bets.custom.color
                 .cornerRadius(16)
         )
-    }
-}
-
-extension HorizontalAlignment {
-    private enum LeftBets: AlignmentID {
-        static func defaultValue(in d: ViewDimensions) -> CGFloat {
-            return d.height
+        .onTapGesture {
+            viewModel.selectedBetType = .custom
         }
     }
-
-    static let leftBets = HorizontalAlignment(LeftBets.self)
 }
 
 struct CreateBetViewPreviews: PreviewProvider {
