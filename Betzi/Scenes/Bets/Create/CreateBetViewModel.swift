@@ -14,5 +14,28 @@ final class CreateBetViewModel: ObservableObject {
     }
 
     @Published var selectedBetType: BetType = .classic
+    @Published var tournamnets: [String] = []
+    @Published var isLoadingTournaments: Bool = false
+    @Published var selectedTournament: String?
+    
+    private let betService: BetServiceType
 
+    init(betService: BetServiceType) {
+        self.betService = betService
+    }
+
+    @MainActor
+    func fetchTournamnets() async {
+        isLoadingTournaments = true
+        do {
+            tournamnets = try await betService.fetchTournaments()
+            isLoadingTournaments = false
+        } catch {
+            isLoadingTournaments = false
+        }
+    }
+
+    func selectTournament(at index: Int) {
+        selectedTournament = tournamnets[index]
+    }
 }

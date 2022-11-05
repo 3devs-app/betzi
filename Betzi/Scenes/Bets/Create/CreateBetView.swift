@@ -33,6 +33,9 @@ struct CreateBetView: View {
                 })
             }
         }
+        .task {
+            await viewModel.fetchTournamnets()
+        }
         .background(Colors.neutrals.neutral03.color.ignoresSafeArea())
     }
 
@@ -53,7 +56,14 @@ struct CreateBetView: View {
                 .frame(maxWidth: .infinity, alignment: .leading)
                 .textStyle(.bodySmallBold)
 
-            PickerView(isLoading: .constant(false))
+            PickerView(
+                isLoading: $viewModel.isLoadingTournaments,
+                options: $viewModel.tournamnets,
+                selectedOption: $viewModel.selectedTournament,
+                tapAction: { index in
+                    viewModel.selectTournament(at: index)
+                }
+            )
         }
     }
 
@@ -130,6 +140,6 @@ struct CreateBetView: View {
 
 struct CreateBetViewPreviews: PreviewProvider {
     static var previews: some View {
-        CreateBetView(viewModel: .init())
+        CreateBetView(viewModel: .init(betService: BetService()))
     }
 }
