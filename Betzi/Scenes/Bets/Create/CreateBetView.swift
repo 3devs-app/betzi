@@ -15,7 +15,14 @@ struct CreateBetView: View {
         VStack(spacing: .large) {
             ProgressBar(value: .constant(0.3))
 
-            scrollableContent
+            ZScrollView {
+                scrollableContent
+            } fixedContent: {
+                Button("Next") {
+                    print("button tap")
+                }
+                .buttonStyle(ButtonMainStyle())
+            }
         }
         .padding(.horizontal, .medium)
         .toolbar {
@@ -30,36 +37,33 @@ struct CreateBetView: View {
     }
 
     private var scrollableContent: some View {
-        ScrollView {
-            VStack(spacing: .large) {
-                Text("Bet type")
-                    .textStyle(.h2)
-                    .foregroundColor(Colors.primary.midnightBlue)
-                    .frame(maxWidth: .infinity, alignment: .leading)
+        VStack(spacing: .large) {
+            Text("Bet type")
+                .textStyle(.h2)
+                .foregroundColor(Colors.primary.midnightBlue)
+                .frame(maxWidth: .infinity, alignment: .leading)
 
-                classicBet
+            classicBet
 
-                customBet
+            customBet
 
-                Divider()
+            Divider()
 
-                Text("Tournament")
-                    .frame(maxWidth: .infinity, alignment: .leading)
-                    .textStyle(.bodySmallBold)
+            Text("Tournament")
+                .frame(maxWidth: .infinity, alignment: .leading)
+                .textStyle(.bodySmallBold)
 
-                Button("Next") {
-                    print("button tap")
-                }
-                .buttonStyle(ButtonMainStyle())
-            }
+            PickerView(isLoading: .constant(false))
         }
     }
 
     private var classicBet: some View {
         HStack(spacing: .medium) {
-            Circle()
-                .fill(Colors.primary.violet)
-                .frame(width: 56, height: 56)
+            ImageWithBackgroundView(
+                image: Images.bets.soccerBallBet.image,
+                color: Colors.primary.violet.color,
+                backgroundWidth: 56
+            )
 
             VStack(alignment: .leading, spacing: .medium) {
                 Text("Classic bet")
@@ -90,9 +94,11 @@ struct CreateBetView: View {
 
     private var customBet: some View {
         HStack(spacing: .medium) {
-            Circle()
-                .fill(Colors.primary.midnightBlue)
-                .frame(width: 56, height: 56)
+            ImageWithBackgroundView(
+                image: Images.bets.pencil.image,
+                color: Colors.primary.midnightBlue.color,
+                backgroundWidth: 56
+            )
 
             VStack(alignment: .leading, spacing: .medium) {
                 Text("Custom bet")

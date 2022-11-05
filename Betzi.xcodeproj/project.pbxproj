@@ -61,6 +61,10 @@
 		A0EEF35F285B670D0054DBF4 /* BetziTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0EEF35E285B670D0054DBF4 /* BetziTests.swift */; };
 		A1116B7329154CA600AB8971 /* SelectableCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1116B7229154CA600AB8971 /* SelectableCircleView.swift */; };
 		A1116B7729154ED600AB8971 /* ButtonMainStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1116B7629154ED600AB8971 /* ButtonMainStyle.swift */; };
+		A1116B7929164C2700AB8971 /* ImageWithBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1116B7829164C2700AB8971 /* ImageWithBackgroundView.swift */; };
+		A1116B7B2916518C00AB8971 /* PickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1116B7A2916518C00AB8971 /* PickerView.swift */; };
+		A1116B7E2916540E00AB8971 /* ZScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1116B7D2916540E00AB8971 /* ZScrollView.swift */; };
+		A1116B802916570900AB8971 /* Shape+.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1116B7F2916570900AB8971 /* Shape+.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -134,6 +138,10 @@
 		A0EEF35E285B670D0054DBF4 /* BetziTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BetziTests.swift; sourceTree = "<group>"; };
 		A1116B7229154CA600AB8971 /* SelectableCircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectableCircleView.swift; sourceTree = "<group>"; };
 		A1116B7629154ED600AB8971 /* ButtonMainStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonMainStyle.swift; sourceTree = "<group>"; };
+		A1116B7829164C2700AB8971 /* ImageWithBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageWithBackgroundView.swift; sourceTree = "<group>"; };
+		A1116B7A2916518C00AB8971 /* PickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerView.swift; sourceTree = "<group>"; };
+		A1116B7D2916540E00AB8971 /* ZScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZScrollView.swift; sourceTree = "<group>"; };
+		A1116B7F2916570900AB8971 /* Shape+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Shape+.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -211,7 +219,7 @@
 		4FBDCF0228733E5D00E4AFA1 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				4FBDCF0328733E6B00E4AFA1 /* View+.swift */,
+				A1116B812916570B00AB8971 /* SwiftUI */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -219,10 +227,13 @@
 		4FBDCF0B287341BB00E4AFA1 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				A1116B7C2916540400AB8971 /* ScrollViews */,
 				4FBDCF0D287341CA00E4AFA1 /* Buttons */,
 				4FBDCF0C287341C400E4AFA1 /* TextFields */,
 				4F26F45628A84795005558E8 /* ProgressBar.swift */,
 				A1116B7229154CA600AB8971 /* SelectableCircleView.swift */,
+				A1116B7829164C2700AB8971 /* ImageWithBackgroundView.swift */,
+				A1116B7A2916518C00AB8971 /* PickerView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -592,6 +603,23 @@
 			path = Button;
 			sourceTree = "<group>";
 		};
+		A1116B7C2916540400AB8971 /* ScrollViews */ = {
+			isa = PBXGroup;
+			children = (
+				A1116B7D2916540E00AB8971 /* ZScrollView.swift */,
+			);
+			path = ScrollViews;
+			sourceTree = "<group>";
+		};
+		A1116B812916570B00AB8971 /* SwiftUI */ = {
+			isa = PBXGroup;
+			children = (
+				4FBDCF0328733E6B00E4AFA1 /* View+.swift */,
+				A1116B7F2916570900AB8971 /* Shape+.swift */,
+			);
+			path = SwiftUI;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -763,9 +791,12 @@
 				4FF4FCAE28566F43008569CB /* Spacing.swift in Sources */,
 				4FE4DC2C283928EC00419730 /* OnboardingView.swift in Sources */,
 				4FBF6202283C203E00DDBE71 /* OnboardingViewModel2.swift in Sources */,
+				A1116B7929164C2700AB8971 /* ImageWithBackgroundView.swift in Sources */,
+				A1116B7B2916518C00AB8971 /* PickerView.swift in Sources */,
 				4FBF6236283D602600DDBE71 /* IndependentScreenCoordinator.swift in Sources */,
 				4FDCAF05283192B5000DF9B5 /* BetService.swift in Sources */,
 				4FBF6222283D532500DDBE71 /* Screen2View.swift in Sources */,
+				A1116B802916570900AB8971 /* Shape+.swift in Sources */,
 				4FBF6219283D523C00DDBE71 /* Flow1Coordinator.swift in Sources */,
 				A1116B7329154CA600AB8971 /* SelectableCircleView.swift in Sources */,
 				4FBF61F5283C1C8E00DDBE71 /* HomeView.swift in Sources */,
@@ -777,6 +808,7 @@
 				4FBF61EB283C19C300DDBE71 /* ModalRouter.swift in Sources */,
 				A1116B7729154ED600AB8971 /* ButtonMainStyle.swift in Sources */,
 				4FBDCEFF28733D6800E4AFA1 /* R.generated.swift in Sources */,
+				A1116B7E2916540E00AB8971 /* ZScrollView.swift in Sources */,
 				4FBF61E6283C173500DDBE71 /* Coordinator.swift in Sources */,
 				1A7D0E1C283FD84F005A98A2 /* Environment.swift in Sources */,
 				4FBF61D6283ABD8B00DDBE71 /* Avatar.swift in Sources */,
